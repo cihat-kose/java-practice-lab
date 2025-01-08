@@ -1,8 +1,8 @@
 package _03_Variables;
 
 public class _03_Variables {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // 🎯 Bir sayı tanımlayın ve 20 ile çarpıp sonucu yazdırın
         int sayi = 7;
         int sonuc = sayi * 20;

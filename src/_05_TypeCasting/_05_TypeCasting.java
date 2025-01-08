@@ -1,8 +1,8 @@
 package _05_TypeCasting;
 
 public class _05_TypeCasting {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // Task 1: Double ➝ Int (Narrowing)
         // 🔢 Bir ondalık sayı (double) tanımlayın ve bu değeri tam sayı (int) veri tipine dönüştürüp ekrana yazdırın.
 

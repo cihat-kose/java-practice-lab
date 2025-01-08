@@ -3,7 +3,6 @@ package _08_ArithmeticOperators;
 public class ArithmeticOperatorsDemo {
 
     public static void main(String[] args) {
-
         // Değişkenlerin tanımlanması
         int sayi1 = 8;
         int sayi2 = 3;

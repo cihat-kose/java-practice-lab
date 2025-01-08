@@ -1,8 +1,8 @@
 package _01_PrintPrintln;
 
 public class _01_PrintPrintln {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // 🚀 Java dünyasına ilk adım: "Merhaba Dünya"
         System.out.println("Merhaba Dünya!");
 

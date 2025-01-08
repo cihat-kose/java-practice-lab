@@ -1,6 +1,7 @@
 package _04_DataTypes;
 
 public class _04_DataTypes {
+
     public static void main(String[] args) {
         // Task 1:
         // 10000003333333 değerinde bir değişken tanımlayın ve 1000 ekleyerek sonucu yazdırın.

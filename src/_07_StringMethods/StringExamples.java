@@ -3,7 +3,6 @@ package _07_StringMethods;
 public class StringExamples {
 
     public static void main(String[] args) {
-
         String greeting = "Merhaba";
 
         // toLowerCase(): Tüm harfleri küçük harfe çevirir.

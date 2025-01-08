@@ -1,8 +1,8 @@
 package _02_EscapeSequences;
 
 public class _02_EscapeSequences {
-    public static void main(String[] args) {
 
+    public static void main(String[] args) {
         // 🎭 \n: Yeni satıra geçer
         System.out.println("Kahve içiyordum.\nBirden kapı çaldı.");
 
