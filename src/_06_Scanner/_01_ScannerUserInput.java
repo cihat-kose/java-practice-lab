@@ -5,7 +5,7 @@ import java.util.Scanner;
 public class _01_ScannerUserInput {
 
     // 1. Task: Kullanıcıdan bir isim alarak ekrana
-    // "Merhaba, {ad}!" şeklinde bir çıktı yazdıran bir program yazın.**
+    // "Merhaba, {ad}!" şeklinde bir çıktı yazdıran bir program yazın.
 
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
