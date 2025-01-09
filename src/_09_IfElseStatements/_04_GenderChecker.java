@@ -2,12 +2,13 @@ package _09_IfElseStatements;
 
 import java.util.Scanner;
 
-/*
+/**
 Görev:
 Kullanıcıdan “E” veya “K” harflerinden birini alarak
 cinsiyetini belirleyen program yazın.
 E: Erkek, K: Kadın
 */
+
 public class _04_GenderChecker {
 
     public static void main(String[] args) {

@@ -7,6 +7,7 @@ Görev:
 Kullanıcıdan bir harf alarak bu harfin sesli veya sessiz olduğunu belirleyen bir program yazın.
 Sesli Harfler: a, e, ı, i, o, ö, u, ü
 */
+
 public class _05_VowelChecker {
 
     public static void main(String[] args) {
