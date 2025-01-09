@@ -15,7 +15,6 @@ import java.util.Scanner;
 public class _02_CinemaTicketCalculator {
 
     public static void main(String[] args) {
-
         Scanner input = new Scanner(System.in);
         System.out.print("Lütfen yaşınızı giriniz: ");
         int yas = input.nextInt();

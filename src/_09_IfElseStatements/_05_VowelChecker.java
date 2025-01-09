@@ -2,7 +2,7 @@ package _09_IfElseStatements;
 
 import java.util.Scanner;
 
-/*
+/**
 Görev:
 Kullanıcıdan bir harf alarak bu harfin sesli veya sessiz olduğunu belirleyen bir program yazın.
 Sesli Harfler: a, e, ı, i, o, ö, u, ü
