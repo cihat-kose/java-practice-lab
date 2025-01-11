@@ -20,8 +20,8 @@ public class _02_CinemaTicketCalculator {
         int yas = input.nextInt();
         input.close();  // Kaynak sızıntısını önlemek için Scanner kapatılır.
 
-        double indirim;  // İndirim miktarı
-        double sabitFiyat = 60;  // Sinema bileti temel fiyatı
+        int indirim;  // İndirim miktarı
+        int sabitFiyat = 60;  // Sinema bileti temel fiyatı
 
         // Yaşa göre indirim belirlenir
         if (yas < 18) {
@@ -33,7 +33,7 @@ public class _02_CinemaTicketCalculator {
         }
 
         // İndirim uygulanarak fiyat hesaplanır
-        double fiyat = sabitFiyat - indirim;
+        int fiyat = sabitFiyat - indirim;
 
         // Sonuç kullanıcıya gösterilir
         System.out.println("Sinema bileti fiyatınız: " + fiyat + " TL");
