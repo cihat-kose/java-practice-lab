@@ -6,6 +6,7 @@ import java.util.Scanner;
    Görev:
    Girilen bir metni tersten yazdıran bir Java programı yazınız.
 */
+
 public class _04_ReverseString {
 
     public static void main(String[] args) {

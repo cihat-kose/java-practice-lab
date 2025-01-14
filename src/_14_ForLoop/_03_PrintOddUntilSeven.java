@@ -5,6 +5,7 @@ package _14_ForLoop;
    1'den 10'a kadar olan tek sayıları ekrana yazdıran,
    ancak 7 sayısına gelindiğinde döngüyü sonlandıran bir for döngüsü oluşturunuz.
 */
+
 public class _03_PrintOddUntilSeven {
 
     public static void main(String[] args) {
