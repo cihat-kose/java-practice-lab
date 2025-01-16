@@ -23,7 +23,7 @@ public class _08_FindMaxAndMin {
 
         // Kullanıcının belirttiği kadar sayı girmek için döngü çalıştırılır.
         for (int i = 0; i < n; i++) {
-            System.out.print((i + 1) + ". sayıyı girin: "); // Sayı sırasını belirtmek için i+1.
+            System.out.print((i + 1) + ". sayıyı girin: ");
             int num = input.nextInt();
 
             // Girilen sayı en büyükten büyükse en büyük güncellenir.
