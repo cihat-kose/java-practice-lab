@@ -14,7 +14,6 @@ public class _02_PrintUntilFive {
             if (i == 5) {
                 break; // Döngüden çıkılır.
             }
-            // 'i' değerini ekrana yazdırır.
             System.out.print(i + " ");
         }
     }
