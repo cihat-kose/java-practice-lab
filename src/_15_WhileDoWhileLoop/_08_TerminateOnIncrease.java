@@ -2,10 +2,23 @@ package _15_WhileDoWhileLoop;
 
 import java.util.Scanner;
 
-public class _08_Example {
-    public static void main(String[] args) {
-        // Task Kullanıcından 10 sayı isteyiniz, eğer sonra girilen önce girilenden büyük ise döngü sonlansın.
+/**
+   Görev:
+   Kullanıcıdan 10 adet sayı alınız. Eğer girilen bir sayı, kendisinden önce girilen
+   sayıdan büyükse döngü sonlandırılacaktır.
 
+   Örnek:
+   1. sayıyı giriniz: 50
+   2. sayıyı giriniz: 40
+   3. sayıyı giriniz: 30
+   4. sayıyı giriniz: 35
+
+   Çıktı:
+   Döngü sonlandırıldı çünkü son girilen sayı önce girilenden büyük.
+*/
+
+public class _08_TerminateOnIncrease {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         int oncekiSayi = Integer.MAX_VALUE; // İlk karşılaştırma için büyük bir değer
@@ -17,9 +30,9 @@ public class _08_Example {
 
             if (mevcutSayi > oncekiSayi) {
                 dahaBuyuk = true;
-                break; // Döngüyü sonlandır
+                break;  // Döngüyü sonlandır
             }
-            oncekiSayi = mevcutSayi; // Mevcut sayıyı bir sonraki karşılaştırma için sakla
+            oncekiSayi = mevcutSayi;  // Mevcut sayıyı bir sonraki karşılaştırma için sakla
         }
 
         if (dahaBuyuk) {
@@ -27,6 +40,7 @@ public class _08_Example {
         } else {
             System.out.println("Tüm sayılar başarıyla girildi.");
         }
+
         scanner.close();
     }
 }
