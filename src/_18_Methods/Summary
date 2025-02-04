@@ -13,8 +13,8 @@ accessModifier returnType methodName(parameterList) {
 }
 
 - accessModifier (Erişim Belirleyici)**: Metodun nereden erişilebileceğini belirtir (`public`vd.).
-- returnType (Dönüş Tipi)**: Metodun geri döndüreceği veri tipi (`int`, `double`, `void`, vs.).
-- methodName (Metot Adı)**: Metodun adı, metot çağrıldığında kullanılan isimdir.
+- returnType (Dönüş Tipi): Metodun geri döndüreceği veri tipi (`int`, `double`, `void`, vs.).
+- methodName (Metot Adı): Metodun adı, metot çağrıldığında kullanılan isimdir.
 - parameterList (Parametre Listesi)**: Metodun alabileceği parametreler, parantezler içinde belirtilir.
 
 Örnek Metot
