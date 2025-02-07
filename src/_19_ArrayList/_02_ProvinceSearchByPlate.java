@@ -4,18 +4,21 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.Scanner;
 
-public class _01_Example {
+/**
+    02_ProvinceSearchByPlate
 
+    Görev:
+    Kullanıcıdan plaka kodu alarak Türkiye'nin illeri arasında sorgu yapan bir program yazın.
+
+    İçerik:
+    - Türkiye'nin illerini ve plaka kodlarını içeren bir `ArrayList` oluşturulacaktır.
+    - Kullanıcıdan alınan plaka koduna göre ilgili ilin adı bulunacaktır.
+    - Kullanıcı "exit" komutuyla programdan çıkış yapabilecektir.
+    - İlleri ve plaka kodlarını ekrana yazdırma özelliği dahil edilmiştir.
+ */
+
+public class _02_ProvinceSearchByPlate {
     public static void main(String[] args) {
-        // Türkiye'nin illerini ve plaka kodlarını içeren bir kodu ArrayList kullanarak oluşturunuz.
-        // Plaka girince ili versin ve çıkış yapana kadar sorgu yapılabilsin.
-        // 1-ArrayList'in oluşturulması ve Türkiye'nin illeriyle plaka kodlarının eklenmesi.
-        // 2-İllerin ekrana yazdırılması.
-        // 3-Kullanıcıdan bir plaka kodu girmesi istenir.
-        // 4-Kullanıcının girdiği plaka koduna karşılık gelen ili bulma.
-        // 5-Bulunan ili ekrana yazdırma.
-        // 6-Kullanıcının "exit" yazarak programı sonlandırma seçeneği.
-
         // 1- ArrayList'in oluşturulması ve Türkiye'nin illeriyle plaka kodlarının eklenmesi.
         ArrayList<String> iller = new ArrayList<>();
         Collections.addAll(iller, "01-Adana", "02-Adıyaman", "03-Afyonkarahisar", "04-Ağrı",
