@@ -23,7 +23,6 @@ import java.util.List;
 
 public class _01_ArrayListUsageExamples {
     public static void main(String[] args) {
-
         // ArrayList Oluşturma:
         // ArrayList, dinamik boyutlu bir dizidir. Java.util.ArrayList'i import ederek kullanabiliriz.
         ArrayList<String> myList = new ArrayList<>();
