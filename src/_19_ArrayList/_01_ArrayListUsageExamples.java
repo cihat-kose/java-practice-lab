@@ -4,7 +4,24 @@ import java.util.ArrayList;
 import java.util.Collections;
 import java.util.List;
 
-public class _00_JavaArrayListKullanimOrnekleri {
+/**
+  01_ArrayListUsageExamples
+
+  Görev:
+  Java'da ArrayList veri yapısını kullanarak temel işlemleri gerçekleştiren örnekler oluşturma.
+
+  İçerik:
+  - Dinamik boyutlu bir ArrayList oluşturma.
+  - Eleman ekleme, belirli bir indekse ekleme, çoklu eleman ekleme.
+  - Eleman silme ve belirli bir indeksteki elemanı kaldırma.
+  - Eleman arama, boyut öğrenme ve indeks bulma.
+  - Eleman güncelleme ve erişim işlemleri.
+  - ArrayList'i diziye dönüştürme ve temizleme.
+  - Liste içinde belirli elemanları koruma veya kaldırma işlemleri.
+  - ArrayList sıralama ve ters çevirme işlemleri.
+ */
+
+public class _01_ArrayListUsageExamples {
     public static void main(String[] args) {
 
         // ArrayList Oluşturma:
@@ -49,22 +66,22 @@ public class _00_JavaArrayListKullanimOrnekleri {
 
         // ArrayList Boyutunu Alma:
         // size() metodu ile ArrayList'in boyutunu (eleman sayısını) alırız.
-        int boyut = myList.size(); // ArrayList'in boyutunu alır.
+        int boyut = myList.size();
         System.out.println("ArrayList'in boyutu: " + boyut);
 
         // Belirli Bir Indeksteki Elemanı Alma:
         // get(int index) metodu ile belirtilen indeksdeki elemanı alırız.
-        String eleman = myList.get(2); // Üçüncü indeksteki elemanı alır.
-        System.out.println("Üçüncü indeksteki eleman: " + eleman);
+        String eleman = myList.get(2);
+        System.out.println("İkinci indeksteki eleman: " + eleman);
 
         // Eleman Güncelleme:
         // set(int index, E element) metodu ile belirtilen indeksteki elemanı güncelleriz.
-        myList.set(2, "GuncellenmisEleman"); // Üçüncü indeksteki elemanı günceller.
+        myList.set(2, "GuncellenmisEleman");
         System.out.println("Eleman güncellendikten sonra myList: " + myList);
 
         // ArrayList'i Diziye Dönüştürme:
         // toArray(T[] a) metodu ile ArrayList'i diziye dönüştürürüz.
-        String[] dizi2 = myList.toArray(new String[0]); // ArrayList'i diziye dönüştürür.
+        String[] dizi2 = myList.toArray(new String[0]);
         System.out.print("ArrayList'ten dönüştürülen dizi: ");
         for (String s : dizi2) {
             System.out.print(s + " ");
@@ -73,31 +90,31 @@ public class _00_JavaArrayListKullanimOrnekleri {
 
         // ArrayList'i Temizleme:
         // clear() metodu ile ArrayList'in tüm elemanlarını sileriz.
-        myList.clear(); // ArrayList'i temizler.
+        myList.clear();
         System.out.println("ArrayList temizlendikten sonra myList: " + myList);
 
         // isEmpty(): ArrayList boşsa true, doluysa false döner.
-        boolean bosMu = myList.isEmpty(); // ArrayList boşsa true, doluysa false döner.
+        boolean bosMu = myList.isEmpty();
         System.out.println("ArrayList boş mu: " + bosMu);
 
         // contains(Object o): Belirtilen elemanın ArrayList içinde olup olmadığını kontrol eder.
-        boolean varMi = myList.contains("Eleman1"); // "Eleman1" elemanı ArrayList'te varsa true döner.
+        boolean varMi = myList.contains("Eleman1");
         System.out.println("Eleman1 ArrayList'te var mı: " + varMi);
 
         // addAll(Collection c): Başka bir koleksiyondaki tüm elemanları mevcut ArrayList'e ekler.
         ArrayList<String> digerListe = new ArrayList<>();
         digerListe.add("EkEleman1");
         digerListe.add("EkEleman2");
-        myList.addAll(digerListe); // digerListe'deki tüm elemanları myList'e ekler.
+        myList.addAll(digerListe);
         System.out.println("Başka bir koleksiyondan eklenen elemanlardan sonra myList: " + myList);
 
-        // removeAll(Collection c): Belirtilen koleksiyondaki tüm elemanları ArrayList'den kaldırır.
-        myList.removeAll(digerListe); // digerListe'deki tüm elemanları myList'ten çıkarır.
+        // removeAll(Collection c): Belirtilen koleksiyondaki tüm elemanları ArrayList'ten kaldırır.
+        myList.removeAll(digerListe);
         System.out.println("Başka bir koleksiyondaki elemanlar çıkarıldıktan sonra myList: " + myList);
 
         // retainAll(Collection c): Belirtilen koleksiyondaki elemanlar dışındaki tüm elemanları kaldırır.
-        myList.addAll(digerListe); // Yeniden ekleyelim ki retainAll'ı test edelim.
-        myList.retainAll(digerListe); // myList'te sadece digerListe'deki elemanları bırakır, diğerlerini çıkarır.
+        myList.addAll(digerListe);
+        myList.retainAll(digerListe);
         System.out.println("Belirtilen koleksiyon dışındaki elemanlar çıkarıldıktan sonra myList: " + myList);
 
         // add() metodu ile ArrayList'e eleman ekleyebiliriz.
@@ -107,7 +124,7 @@ public class _00_JavaArrayListKullanimOrnekleri {
         System.out.println("Yeni elemanlar eklendikten sonra myList: " + myList);
 
         // subList(int fromIndex, int toIndex): Belirtilen indeks aralığındaki elemanları içeren alt bir List döner.
-        List<String> altListe = myList.subList(1, 3); // 1. ve 2. indeksdeki elemanları içeren bir alt liste döner.
+        List<String> altListe = myList.subList(1, 3);
         System.out.println("altListe = " + altListe);
 
         // Collections.sort(): ArrayList'i sıralar.
