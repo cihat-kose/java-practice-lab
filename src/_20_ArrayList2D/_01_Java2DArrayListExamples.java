@@ -2,7 +2,22 @@ package _20_ArrayList2D;
 
 import java.util.ArrayList;
 
-public class _00_Java2DArrayListKullanimOrnekleri {
+/**
+    01_Java2DArrayListExamples
+
+    Açıklama:
+    Java'da 2D ArrayList (ArrayList içinde ArrayList) kullanımına yönelik örnekler.
+
+    İçerik:
+    - 2D ArrayList oluşturma ve eleman ekleme.
+    - Belirli bir satıra ve sütuna erişme.
+    - Eleman güncelleme.
+    - Yeni satır ve sütun ekleme.
+    - Belirli bir satırı ve sütunu silme.
+    - 2D ArrayList içeriğini ekrana yazdırma.
+ */
+
+public class _01_Java2DArrayListExamples {
     public static void main(String[] args) {
         // 2D ArrayList oluşturma
         // 2D ArrayList, ArrayList içinde ArrayList'ler bulundurur.
@@ -68,11 +83,19 @@ public class _00_Java2DArrayListKullanimOrnekleri {
         }
         System.out.println("Her satırdan ikinci eleman silindikten sonra twoDArrayList: " + twoDArrayList);
 
-        // 2D ArrayList'i yazdırma
+        // 2D ArrayList'i foreach ile yazdırma
         System.out.println("2D ArrayList:");
         for (ArrayList<Integer> row : twoDArrayList) {
             for (int value : row) {
                 System.out.print(value + " ");
+            }
+            System.out.println();
+        }
+
+        // 2D ArrayList içeriğini fori ile ekrana yazdırma
+        for (int i = 0; i < twoDArrayList.size(); i++) {
+            for (int j = 0; j < twoDArrayList.get(i).size(); j++) {
+                System.out.print(twoDArrayList.get(i).get(j) + " ");
             }
             System.out.println();
         }
