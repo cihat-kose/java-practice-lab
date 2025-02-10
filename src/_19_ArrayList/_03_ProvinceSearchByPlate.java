@@ -17,7 +17,7 @@ import java.util.Scanner;
     - İlleri ve plaka kodlarını ekrana yazdırma özelliği dahil edilmiştir.
  */
 
-public class _02_ProvinceSearchByPlate {
+public class _03_ProvinceSearchByPlate {
     public static void main(String[] args) {
         // 1- ArrayList'in oluşturulması ve Türkiye'nin illeriyle plaka kodlarının eklenmesi.
         ArrayList<String> iller = new ArrayList<>();
