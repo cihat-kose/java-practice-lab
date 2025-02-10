@@ -3,7 +3,22 @@ package _20_ArrayList2D;
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class _01_Example {
+/**
+    02_CinemaSeatReservation
+
+    Açıklama:
+    Java'da **2D ArrayList** kullanarak sinema salonu koltuk rezervasyon sistemi.
+
+    İçerik:
+    - Kullanıcıdan sinema salonundaki satır ve koltuk sayılarını alarak 2D ArrayList oluşturma.
+    - Kullanıcıya gösterilecek bir **ana menü** tasarlama.
+    - Kullanıcının **sinema salonunu görmesini**, **koltuk rezervasyonu yapmasını** veya **çıkış yapmasını** sağlama.
+    - **Sinema salonunu ekrana yazdırma** ve koltukların durumlarını (`O` - boş, `X` - dolu) gösterme.
+    - **Koltuk rezervasyonu yapma** ve dolu koltukları engelleme.
+    - Kullanıcı **çıkış yapana kadar** programın çalışmasını sağlama.
+ */
+
+public class _03_CinemaSeatReservation {
     public static void main(String[] args) {
         /*
             - Sinema Salonu Oluşturma:
@@ -132,3 +147,4 @@ public class _01_Example {
         }
     }
 }
+// [docs]: Added task description and updated class name to English. 🚀
