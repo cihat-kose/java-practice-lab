@@ -4,16 +4,15 @@ import java.util.Iterator;
 import java.util.LinkedHashSet;
 import java.util.Scanner;
 
-public class _03_Example {
-    public static void main(String[] args) {
-        /**
-         * Task:
-         * Bir LinkedHashSet oluşturun ve içine bazı öğrenci isimleri ekleyiniz.
-         * Daha sonra LinkedHashSet’i yineleyerek öğrenci isimlerini
-         * eklendikleri sıraya göre yazdırınız.
-         */
+/**
+ * Görev
+ * Bir LinkedHashSet oluşturun ve içine bazı ğrenci isimleri ekleyiniz.
+ * Daha sonra LinkedHashSet’i yineleyerek öğrenci isimlerini
+ * eklendikleri sıraya göre yazdırınız.
+ */
 
-        // Bir Scanner nesnesi oluşturun
+public class _03_OrderedStudentSet {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Bir LinkedHashSet oluşturun
