@@ -3,8 +3,6 @@ package _20_ArrayList2D;
 import java.util.ArrayList;
 
 /**
-    01_Java2DArrayListExamples
-
     Açıklama:
     Java'da 2D ArrayList (ArrayList içinde ArrayList) kullanımına yönelik örnekler.
 

@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.Scanner;
 
 /**
-    02_ProvinceSearchByPlate
-
     Görev:
     Kullanıcıdan plaka kodu alarak Türkiye'nin illeri arasında sorgu yapan bir program yazın.
 

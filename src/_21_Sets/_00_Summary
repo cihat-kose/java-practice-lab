@@ -9,20 +9,20 @@ Java'da `Set`ler, `HashSet`, `TreeSet` ve `LinkedHashSet` olmak üzere üç ana 
 
  Bu sınıflar arasındaki farklar şu şekildedir:
 
-1. **HashSet**:
+1. HashSet:
     - Elemanları herhangi bir sırayla depolar ve en hızlı ekleme/silme işlemlerine sahiptir.
     - Elemanların sırası önemli değilse tercih edilir.
     - Hash tabanlı bir yapı kullandığı için `null` değerine izin verir.
     - Performans: Ortalama O(1) ekleme, silme ve arama işlemleri.
 
-2. **TreeSet**:
+2. TreeSet:
     - Elemanları doğal bir sıraya göre veya sağlanan bir `Comparator` ile sıralı olarak depolar.
     - Elemanların sıralı olması gerektiği durumlarda kullanılır.
     - `NavigableSet` ve `SortedSet` arayüzlerini uygular.
     - Performans: Ortalama O(log n) ekleme, silme ve arama işlemleri.
     - `null` değerine izin vermez.
 
-3. **LinkedHashSet**:
+3. LinkedHashSet:
     - Elemanları eklendiği sıraya göre depolar.
     - Elemanların sırasının korunması gerektiği durumlarda kullanılır.
     - `HashSet`e göre ekleme/silme işlemleri biraz daha yavaştır, ancak `TreeSet`e göre daha hızlıdır.

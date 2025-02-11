@@ -4,8 +4,6 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
-    03_ArrayListEvenNumbers
-
     Görev:
     Kullanıcıdan 10 adet tam sayı alarak bunları bir ArrayList içinde saklayan ve
     sadece çift sayıları ekrana yazdıran bir program.

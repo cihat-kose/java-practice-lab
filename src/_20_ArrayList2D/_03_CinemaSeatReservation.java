@@ -4,48 +4,50 @@ import java.util.ArrayList;
 import java.util.Scanner;
 
 /**
-    02_CinemaSeatReservation
+Görev:
+Java'da 2D ArrayList kullanarak bir sinema salonu koltuk rezervasyon sistemi oluşturun.
 
-    Açıklama:
-    Java'da **2D ArrayList** kullanarak sinema salonu koltuk rezervasyon sistemi.
+İçerik:
+- Kullanıcıdan sinema salonundaki satır ve koltuk sayısını alarak 2D ArrayList oluşturun.
+- Kullanıcıya gösterilecek bir ana menü tasarlayın.
+- Kullanıcının sinema salonunu görmesini, koltuk rezervasyonu yapmasını veya çıkış yapmasını sağlayın.
+- Sinema salonunu ekrana yazdırarak boş koltukları ('O') ve dolu koltukları ('X') gösterin.
+- Kullanıcının seçtiği koltuğu rezerve etmesini sağlayın ve dolu koltukları engelleyin.
+- Kullanıcı çıkış yapana kadar programın çalışmasını sağlayın.
 
-    İçerik:
-    - Kullanıcıdan sinema salonundaki satır ve koltuk sayılarını alarak 2D ArrayList oluşturma.
-    - Kullanıcıya gösterilecek bir **ana menü** tasarlama.
-    - Kullanıcının **sinema salonunu görmesini**, **koltuk rezervasyonu yapmasını** veya **çıkış yapmasını** sağlama.
-    - **Sinema salonunu ekrana yazdırma** ve koltukların durumlarını (`O` - boş, `X` - dolu) gösterme.
-    - **Koltuk rezervasyonu yapma** ve dolu koltukları engelleme.
-    - Kullanıcı **çıkış yapana kadar** programın çalışmasını sağlama.
- */
+İpucu:
+
+    1. Sinema Salonunu Oluşturma:
+       - Kullanıcıdan sinema salonundaki satır ve koltuk sayılarını alın.
+       - 2D ArrayList kullanarak sinema salonunu temsil edin.
+       - Başlangıçta tüm koltukları boş ('O') olarak ayarlayın.
+
+    2. Ana Menü ve Kullanıcı İşlemleri:
+       - Kullanıcıya aşağıdaki seçenekleri içeren bir menü gösterin:
+         1. Sinema salonunun mevcut durumunu görüntüle.
+         2. Koltuk rezervasyonu yap.
+         3. Çıkış yap.
+       - Kullanıcıdan seçimini alarak ilgili işlemi gerçekleştirin.
+
+    3. Sinema Salonunu Gösterme:
+       - Sinema salonunun mevcut durumunu ekrana yazdıran bir fonksiyon oluşturun.
+       - Her satır ve sütundaki koltukları tarayın.
+       - Boş koltukları 'O', rezerve edilmiş koltukları 'X' ile gösterin.
+
+    4. Koltuk Rezervasyonu Yapma:
+       - Kullanıcıdan rezervasyon yapmak istediği koltuğun satır ve sütun bilgilerini alın.
+       - Girilen bilgilerin geçerli olup olmadığını kontrol edin.
+       - Eğer koltuk geçerliyse ve boşsa, rezervasyonu tamamlayın ve kullanıcıya bilgi verin.
+       - Koltuk zaten rezerve edilmişse, hata mesajı gösterin.
+       - Geçersiz bir satır veya sütun girilirse, kullanıcıya hata mesajı göstererek tekrar giriş yapmasını isteyin.
+
+    5. Program Kontrolü:
+       - Kullanıcı çıkış yapana kadar programın çalışmasını sağlayan bir kontrol mekanizması ekleyin.
+       - Kullanıcı çıkış yaptığında programdan çıkış mesajı gösterin.
+*/
 
 public class _03_CinemaSeatReservation {
     public static void main(String[] args) {
-        /*
-            - Sinema Salonu Oluşturma:
-            Kullanıcıdan sinema salonundaki satır ve koltuk sayılarını alın.
-            İki boyutlu bir ArrayList kullanarak sinema salonunu temsil edin.
-            İlk başta tüm koltukları boş (rezerve edilmemiş) olarak ayarlayın.
-
-            - Ana Menü ve Kullanıcı İşlemleri:
-            Kullanıcıya gösterilecek bir ana menü oluşturun.
-            Kullanıcı, sinema salonunu görmek, koltuk rezervasyonu yapmak veya programdan çıkmak gibi seçenekleri seçebilmelidir.
-
-            - Sinema Salonunu Gösterme:
-            Sinema salonunu ekrana yazdırmak için bir fonksiyon oluşturun.
-            Her satır ve koltuğu döngüler kullanarak gezin ve rezerve edilmiş koltukları "X" ile, boş koltukları "O" ile gösterin.
-
-            - Koltuk Rezervasyonu Yapma:
-            Kullanıcıdan rezervasyon yapmak istediği koltuğun satır ve sütun bilgilerini alın.
-            Girilen satır ve sütun bilgilerini kontrol ederek geçerli bir koltuk olup olmadığını kontrol edin.
-            Eğer koltuk geçerliyse, bu koltuğun rezerve edilip edilmediğini kontrol edin.
-            Koltuk rezerve edilmemişse, rezervasyonu tamamlayın ve kullanıcıya başarılı bir rezervasyon yapıldığını bildirin.
-            Koltuk zaten rezerve edilmişse, kullanıcıya hata mesajı gösterin.
-            Geçersiz bir satır veya sütun numarası girilirse, kullanıcıya hata mesajı gösterin.
-
-            - Program Kontrolü:
-            Kullanıcı çıkış yapana kadar programın çalışmasını sağlayan bir kontrol mekanizması ekleyin.
-        */
-
         Scanner scanner = new Scanner(System.in);
 
         // Kullanıcıdan satır ve sütun sayısını alarak sinema salonunu oluşturuyoruz.
@@ -147,4 +149,3 @@ public class _03_CinemaSeatReservation {
         }
     }
 }
-// [docs]: Added task description and updated class name to English. 🚀

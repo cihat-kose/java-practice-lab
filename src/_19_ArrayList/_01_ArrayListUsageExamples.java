@@ -5,8 +5,6 @@ import java.util.Collections;
 import java.util.List;
 
 /**
-  01_ArrayListUsageExamples
-
   Görev:
   Java'da ArrayList veri yapısını kullanarak temel işlemleri gerçekleştiren örnekler oluşturma.
 
