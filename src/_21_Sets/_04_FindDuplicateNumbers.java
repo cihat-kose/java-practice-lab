@@ -4,22 +4,24 @@ import java.util.HashSet;
 import java.util.Scanner;
 import java.util.Set;
 
-public class _04_Example {
-    public static void main(String[] args) {
-        /**
-         Task: Bir dizi içindeki yinelenen sayıları bulup
-         bir Set kullanarak geri döndüren bir Java metodu yazınız.
-         Dizinin elemanlarını kullanıcıdan alınız.
-         */
+/**
+Görev:
+- Kullanıcıdan bir dizi uzunluğu alın.
+- Kullanıcının girdiği sayılar ile bir dizi oluşturun.
+- Dizinin içinde **yinelenen (tekrarlayan) sayıları** bulun.
+- Yinelenen sayıları bir **Set** içinde saklayarak ekrana yazdırın.
+*/
 
-        // Bir Scanner nesnesi oluşturun
+public class _04_FindDuplicateNumbers {
+    public static void main(String[] args) {
+        // Kullanıcıdan giriş almak için Scanner nesnesi oluşturuluyor.
         Scanner scanner = new Scanner(System.in);
 
         // Kullanıcıdan dizinin boyutunu alın
-        System.out.print("Lütfen dizinin boyutunu giriniz:");
+        System.out.print("Lütfen dizinin boyutunu giriniz: ");
         int boyut = scanner.nextInt();
 
-        // Bir dizi oluşturun
+        // Kullanıcıdan gelen boyutla bir dizi oluşturun
         int[] sayilar = new int[boyut];
 
         // Kullanıcıdan dizinin elemanlarını alın
@@ -39,6 +41,7 @@ public class _04_Example {
         scanner.close();
     }
 
+    // Dizide tekrar eden sayıları bulan metot
     public static Set<Integer> yinelenenleriBul(int[] dizi) {
         Set<Integer> yinelenenler = new HashSet<>();
         Set<Integer> tekilElemanlar = new HashSet<>();
@@ -53,3 +56,10 @@ public class _04_Example {
         return yinelenenler;
     }
 }
+
+
+
+
+
+
+
