@@ -3,14 +3,16 @@ package _21_Sets;
 import java.util.HashSet;
 import java.util.Scanner;
 
-public class _05_Example {
-    public static void main(String[] args) {
-        /**
-         * Task: Kullanıcıdan iki farklı kelime listesi alın ve bu iki kelime listesinin kesişiminde
-         * bulunan (ortak) kelimeleri bir Set kullanarak bulun.
-         */
+/**
+Görev:
+- Kullanıcıdan iki farklı kelime listesi alın.
+- Kullanıcının girdiği kelimeleri iki ayrı HashSet içinde saklayın.
+- İki kelime listesinin kesişimini (ortak kelimeleri) bir Set kullanarak bulun.
+- Ortak kelimeleri ekrana yazdırın.
+*/
 
-        // Bir Scanner nesnesi oluşturun
+public class _05_CommonWordsFinder {
+    public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
         // Kullanıcıdan ilk kelime listesinin boyutunu alın
@@ -46,8 +48,6 @@ public class _05_Example {
         // Ortak kelimeleri yazdırın
         System.out.println("Ortak Kelimeler: " + ortakKelimeler);
 
-        // Scanner nesnesini kapatın
         scanner.close();
     }
 }
-
