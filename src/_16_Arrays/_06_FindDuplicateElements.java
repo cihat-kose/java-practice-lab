@@ -1,5 +1,7 @@
 package _16_Arrays;
 
+import java.util.Arrays;
+
 /**
    Görev:
    Bir tamsayı dizisinde tekrar eden elemanları bulan bir program yazınız.
@@ -10,19 +12,16 @@ package _16_Arrays;
 
 public class _06_FindDuplicateElements {
     public static void main(String[] args) {
-        int[] numbers = {3, 5, 3, 2, 8, 5, 6, 3, 2};
-        boolean[] checked = new boolean[numbers.length];
+        int[] numbers = {3, 5, 3, 2, 8, 5, 5, 5, 6, 3, 2};
+
+        Arrays.sort(numbers); // Diziyi küçükten büyüğe sıralıyoruz
 
         System.out.print("Tekrar eden elemanlar: ");
 
-        for (int i = 0; i < numbers.length; i++) {
-            if (!checked[i]) {
-                for (int j = i + 1; j < numbers.length; j++) {
-                    if (numbers[i] == numbers[j]) {
-                        System.out.print(numbers[i] + " ");
-                        checked[j] = true;  // Aynı elemanı tekrar yazdırmamak için işaretle
-                        break;
-                    }
+        for (int i = 0; i < numbers.length - 1; i++) {
+            if (numbers[i] == numbers[i + 1]) { // Yan yana aynı eleman varsa
+                if (i == 0 || numbers[i] != numbers[i - 1]) { // Daha önce yazdırılmadıysa
+                    System.out.print(numbers[i] + " ");
                 }
             }
         }
