@@ -1,0 +1,14 @@
+
+Java Class ve Metotları Kullanarak Kişi Bilgileri Yönetimi
+
+1. Bir `Person` sınıfı oluşturun.
+2. Bu sınıfın içinde `name`, `age` ve `hobbies` adında değişkenler olsun.
+3. Bu değişkenlere doğrudan erişerek değer atayın (metot kullanmadan).
+4. `Person` sınıfında bir metot oluşturun (`displayInfo`) ve bu metot kişinin bilgilerini ekrana yazdırsın.
+5. `PersonApp` sınıfında, kullanıcıdan sürekli olarak kişi bilgileri (ad, yaş, hobiler) alın ve bu bilgileri bir
+   `Person` nesnesi kullanarak saklayın.
+6. Kullanıcı devam etmek istemediğinde programı sonlandırın ve girilen tüm kişilerin bilgilerini ekrana yazdırın.
+7. Kullanıcı istediğinde kişilerin bilgilerini yazdırabilmesi için bir seçenek ekleyin.
+8. `PersonSearch` sınıfında, kullanıcıdan bir isim alarak bu ismi kişi listesi içinde arayan ve
+    bulunan kişilerin bilgilerini ekrana yazdıran bir mekanizma oluşturun.
+
