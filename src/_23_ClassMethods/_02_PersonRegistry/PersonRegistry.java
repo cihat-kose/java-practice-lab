@@ -1,9 +1,9 @@
-package _23_ClassMethods._02_Example;
+package _23_ClassMethods._02_PersonRegistry;
 
 import java.util.ArrayList;
 import java.util.Scanner;
 
-public class Main {
+public class PersonRegistry {
     public static void main(String[] args) {
         // Scanner nesnesi oluşturuluyor
         Scanner scanner = new Scanner(System.in);

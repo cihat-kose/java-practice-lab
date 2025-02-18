@@ -1,6 +1,6 @@
-package _23_ClassMethods._01_Example;
+package _23_ClassMethods._01_PersonManagement;
 
-public class Main {
+public class PersonManager {
     public static void main(String[] args) {
         // Yeni bir Person nesnesi oluşturuluyor
         Person person = new Person();
