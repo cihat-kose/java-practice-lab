@@ -1,65 +1,76 @@
+Java'da Metotlar: Static ve Non-Static Metotlar
 
-Java'da metotlar, sınıfların davranışlarını belirlemek için kullanılan özel fonksiyonlardır.
-Metotlar, static ve non-static (örnek) olmak üzere iki ana kategoriye ayrılabilir.
+Java'da metotlar, sınıfların davranışlarını belirleyen fonksiyonlardır ve iki ana kategoriye ayrılır:
+- Static Metotlar
+- Non-Static (Örnek) Metotlar
 
-  Static Metotlar:
-- Sınıfın özelliklerine erişmeden ve nesne oluşturmadan doğrudan sınıf adı ile çağrılabilirler.
-- Sınıfın her nesnesi için aynı davranışı gösterirler ve
-  sınıfın örnek (instance) değişkenlerine erişemezler.
-- Sınıf düzeyinde işlemler yapmak istediğimizde kullanılırlar.
-- Örneğin, bir Matematik sınıfı için bir static toplama metodu oluşturduğumuzda,
-  bu metodu `Matematik.topla()` şeklinde sınıf adı ile çağırabiliriz.
+1. Static Metotlar
+- Bir sınıfa ait olup, nesne oluşturmadan doğrudan sınıf adı ile çağrılabilirler.
+- Sınıf düzeyinde çalışırlar ve sınıfın örnek (instance) değişkenlerine erişemezler.
+- Tüm nesneler için aynı davranışı sergilerler.
+- Örneğin, matematiksel işlemler gibi genel işlemler için kullanışlıdırlar.
 
-   Static Metot Örneği
+Static Metot Örneği:
+public class Matematik {
+    // Static metot
+    public static int topla(int a, int b) {
+        return a + b;
+    }
 
-  public class Matematik {
-      // Static metot
-      public static int topla(int a, int b) {
-          return a + b;
-      }
+    public static void main(String[] args) {
+        int sonuc = Matematik.topla(5, 3);
+        System.out.println("Toplam: " + sonuc); // Toplam: 8
+    }
+}
 
-      public static void main(String[] args) {
-          int sonuc = Matematik.topla(5, 3);
-          System.out.println("Toplam: " + sonuc); // Toplam: 8
-      }
-  }
+Açıklama:
+- topla(int a, int b) metodu static olduğu için Matematik.topla(5, 3) şeklinde doğrudan sınıf adı ile çağrılabilir.
+- Nesne oluşturmaya gerek yoktur.
 
-  Non-Static (Örnek) Metotlar:
-- Nesne bazlıdır ve bir nesne oluşturulduktan sonra çağrılabilirler.
-- Sınıfın örnek değişkenlerine erişebilirler ve her nesne için farklı davranışlar sergileyebilirler.
-- Nesne bazlı işlemler yapmak istediğimizde kullanılırlar.
-- Örneğin, bir Araba sınıfı için bir non-static hızlanma metodu oluşturduğumuzda,
-  bu metodu Araba nesnesi üzerinden çağırabiliriz.
+2. Non-Static (Örnek) Metotlar
+- Nesneye özgüdür ve bir nesne oluşturulduktan sonra çağrılabilir.
+- Sınıfın örnek değişkenlerine erişebilir ve her nesne için farklı davranışlar gösterebilir.
+- Nesne bazlı işlemler yapmak için kullanılır.
 
-  Non-Static Metot Örneği
+Non-Static Metot Örneği:
+public class Araba {
+    private int hiz;
 
-  public class Araba {
-      private int hiz;
+    // Constructor
+    public Araba() {
+        hiz = 0;
+    }
 
-      // Constructor
-      public Araba() {
-          hiz = 0;
-      }
+    // Non-static metot
+    public void hizlan(int artis) {
+        hiz += artis;
+        System.out.println("Yeni hız: " + hiz);
+    }
 
-      // Non-static metot
-      public void hizlan(int artis) {
-          hiz += artis;
-          System.out.println("Yeni hız: " + hiz);
-      }
+    public static void main(String[] args) {
+        Araba araba = new Araba();
+        araba.hizlan(10); // Yeni hız: 10
+        araba.hizlan(20); // Yeni hız: 30
+    }
+}
 
-      public static void main(String[] args) {
-          Araba araba = new Araba();
-          araba.hizlan(10); // Yeni hız: 10
-          araba.hizlan(20); // Yeni hız: 30
-      }
-  }
+Açıklama:
+- hizlan(int artis) metodu non-static olduğu için ancak bir nesne üzerinden çağrılabilir.
+- Araba araba = new Araba(); ifadesi ile bir nesne oluşturulduktan sonra araba.hizlan(10); şeklinde çağrılabilir.
 
-Java'da static ve non-static metotlar arasındaki farklar önemlidir ve doğru kullanımı,
-sınıfın davranışlarını belirlemede önemli bir rol oynar.
+Static ve Non-Static Metotların Karşılaştırılması:
 
+Özellik               | Static Metotlar                      | Non-Static (Örnek) Metotlar
+--------------------- | ---------------------------------- | ----------------------------------
+Nesne Gerekliliği     | Nesne oluşturmadan çağrılabilir.  | Bir nesne üzerinden çağrılmalıdır.
+Erişim                | Sınıf adı ile doğrudan çağrılır.  | Nesne oluşturularak çağrılır.
+Örnek Değişkenler     | Örnek değişkenlere erişemez.      | Örnek değişkenlere erişebilir.
+Davranış              | Tüm nesneler için aynı davranışı sergiler. | Her nesne için farklı davranış gösterebilir.
+Kullanım Alanı        | Genel işlemler (matematiksel hesaplamalar vb.) | Nesne bazlı işlemler (araba hızı vb.)
 
-
-
-
-
-
+Sonuç:
+Java'da static ve non-static metotlar arasındaki farkları anlamak, programların doğru ve etkili tasarlanmasını sağlar.
+- Sınıfa ait genel işlemler için static metotlar tercih edilir.
+- Nesneye özgü davranışlar için non-static metotlar kullanılır.
+- Uygulama gereksinimlerine göre doğru metot tipi seçilmelidir.
+- Static ve non-static metotlar birlikte kullanılarak, Java programlarının modüler ve esnek olması sağlanır.
