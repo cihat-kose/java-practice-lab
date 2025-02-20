@@ -1,19 +1,13 @@
-package _24_StaticNonStaticMethods._03_Example;
+package _24_StaticNonStaticMethods._03_Library;
 
-public class Main {
+public class LibraryApp {
     public static void main(String[] args) {
         // Library sınıfından bir nesne oluşturma
         Library library = new Library();
 
-        // Book sınıfından bir nesne oluşturma ve değer atama
-        Book book1 = new Book();
-        book1.title = "1984";
-        book1.author = "George Orwell";
-
-        // Bir başka Book nesnesi oluşturma ve değer atama
-        Book book2 = new Book();
-        book2.title = "To Kill a Mockingbird";
-        book2.author = "Harper Lee";
+        // Kitap nesneleri oluşturma
+        Book book1 = new Book("1984", "George Orwell");
+        Book book2 = new Book("To Kill a Mockingbird", "Harper Lee");
 
         // Kütüphaneye kitap ekleme
         library.addBook(book1);
@@ -29,4 +23,3 @@ public class Main {
         System.out.println("Toplam kitap sayısı: " + Library.getTotalBookCount()); // 1
     }
 }
-

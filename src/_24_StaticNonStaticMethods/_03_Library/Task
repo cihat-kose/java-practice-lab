@@ -1,0 +1,16 @@
+Görev:
+
+Bir Kitap (Book) ve bir Kütüphane (Library) sınıfı oluşturun.
+Bu sınıflar aşağıdaki gereksinimleri karşılamalıdır:
+
+Gereksinimler:
+1. Book sınıfı, kitap adı ve yazar adını içermelidir.
+2. Library sınıfında, kitapları ekleyip çıkarabilen non-static metotlar bulunmalıdır.
+3. Library sınıfında, mevcut kitap sayısını tutan static bir değişken ve bu değişkeni güncelleyip görüntüleyen static metotlar bulunmalıdır.
+
+İpuçları:
+1. Book sınıfında kitap adı ve yazar adını private değişkenler olarak tanımlayın ve bunlara erişim için getter ve setter metotları oluşturun.
+2. Library sınıfında, kitapları bir liste içinde tutmak için bir ArrayList kullanın.
+3. Library sınıfında, kitap ekleyip çıkarabilen non-static metotlar tanımlayın.
+4. Library sınıfında, mevcut kitap sayısını tutan static bir değişken tanımlayın ve bu değişkeni güncelleyip görüntüleyen static metotlar oluşturun.
+
