@@ -1,10 +1,8 @@
+Görev:
 
-   Task :
-   Java yazılım dilinde aşağıdaki kabul kriterlerine uygun şekilde
-   toplama, çıkarma, bölme ve çarpma işlemlerini yapabilen
-   basit bir hesap makinesi kodu yazınız.
+Java programlama dili kullanarak, toplama, çıkarma, çarpma ve bölme işlemlerini gerçekleştiren basit bir hesap makinesi kodu yazınız.
 
-   Kabul Kriterleri:
-1. Kullanılacak metotlar, ayrı bir classta oluşturulmalı.
-2. Toplama ve çıkarma işlemleri statik metotlar ile yapılmalı.
-3. Çarpma ve bölme işlemleri non-statik metotlar ile yapılmalı.
+Kabul Kriterleri:
+1. İşlemleri gerçekleştiren metotlar, ayrı bir sınıfta tanımlanmalıdır.
+2. Toplama ve çıkarma işlemleri static metotlar ile gerçekleştirilmelidir.
+3. Çarpma ve bölme işlemleri non-static metotlar ile gerçekleştirilmelidir.
