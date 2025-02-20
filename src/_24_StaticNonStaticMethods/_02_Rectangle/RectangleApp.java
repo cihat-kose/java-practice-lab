@@ -1,8 +1,8 @@
-package _24_StaticNonStaticMethods._02_Example;
+package _24_StaticNonStaticMethods._02_Rectangle;
 
-public class Main {
+public class RectangleApp {
     public static void main(String[] args) {
-        // Dikdortgen sınıfından bir nesne oluşturma
+        // Dikdörtgen sınıfından bir nesne oluşturma
         Rectangle dikdortgen = new Rectangle();
 
         double uzunluk = 5;
@@ -10,10 +10,10 @@ public class Main {
 
         // Non-static metot kullanarak alan hesaplama
         double alan = dikdortgen.alanHesapla(uzunluk, genislik);
-        System.out.println("alan = " + alan); // 15
+        System.out.println("Alan = " + alan); // 15
 
         // Static metot kullanarak çevre hesaplama
         double cevre = Rectangle.cevreHesapla(uzunluk, genislik);
-        System.out.println("cevre = " + cevre); // 16
+        System.out.println("Çevre = " + cevre); // 16
     }
 }

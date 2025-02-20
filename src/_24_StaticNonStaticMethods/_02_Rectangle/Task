@@ -1,0 +1,20 @@
+Görev:
+
+Bir Rectangle (Dikdörtgen) sınıfı oluşturun.
+Bu sınıf aşağıdaki iki metodu içermelidir:
+1. alanHesapla() → Non-static metot, dikdörtgenin alanını hesaplar.
+2. cevreHesapla() → Static metot, dikdörtgenin çevresini hesaplar.
+
+İstenilen İşlemler:
+- Rectangle sınıfında alanHesapla() adında bir non-static metot tanımlayın.
+  - Bu metot, uzunluk ve genişlik parametreleri almalı.
+  - Dikdörtgenin alanını hesaplayarak geri döndürmelidir.
+
+- Rectangle sınıfında cevreHesapla() adında bir static metot tanımlayın.
+  - Bu metot, uzunluk ve genişlik parametreleri almalı.
+  - Dikdörtgenin çevresini hesaplayarak geri döndürmelidir.
+
+- Rectangle sınıfından bir nesne oluşturun.
+  - Oluşturulan nesne üzerinden alanHesapla() metodunu kullanarak alanı hesaplayın.
+  - Rectangle sınıfı üzerinden cevreHesapla() metodunu kullanarak çevreyi hesaplayın.
+
