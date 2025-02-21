@@ -1,0 +1,15 @@
+Görev:
+
+Bir Ogrenci (Student) sınıfı oluşturun.
+Bu sınıf aşağıdaki özelliklere ve gereksinimlere sahip olmalıdır:
+
+Gereksinimler:
+1. Öğrencinin adı, soyadı ve yaşı olmak üzere üç özelliği bulunmalıdır.
+2. Eğer yaş değeri verilmezse, varsayılan olarak 18 atanmalıdır.
+3. Öğrencinin bilgilerini ekrana yazdıran bilgileriGoster() metodu tanımlanmalıdır.
+
+İpuçları:
+- Constructor yöntemi kullanılarak farklı parametrelerle nesne oluşturma desteği sağlanmalıdır.
+- Öğrenci bilgilerini ekrana yazdırmak için bir metot tanımlanmalıdır.
+- Farklı senaryoları test etmek için bir TestStudent sınıfı oluşturulmalıdır.
+
