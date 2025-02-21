@@ -1,0 +1,38 @@
+Java Sınıflar ve Metotlar
+
+Sınıflar ve Nesneler
+
+class (Sınıf): Bir nesnenin özelliklerini (değişkenler) ve
+davranışlarını (metotlar) tanımlayan şablondur.
+Örneğin, "Person" sınıfı.
+
+Nesne (Object): Sınıftan oluşturulan somut örnektir.
+Örneğin, "Person" sınıfından oluşturulan bir "person" nesnesi.
+
+Sınıf Tanımlama
+- class anahtar kelimesi ile tanımlanır.
+- Sınıf içinde değişkenler ve metotlar bulunur.
+
+Nesne Oluşturma
+- new anahtar kelimesi ile sınıftan nesne oluşturulur.
+- Nesnenin değişkenlerine doğrudan erişerek değer atayabiliriz.
+
+Metotlar
+- Metotlar, sınıfın davranışlarını tanımlar.
+- void veya geri dönüş tipi (return type) ile tanımlanır.
+- Metotlar, belirli bir işlemi gerçekleştirmek için kullanılır.
+
+Kullanıcıdan Veri Alma
+- Scanner sınıfı kullanılarak kullanıcıdan veri alınır.
+- Kullanıcıdan alınan veriler ile nesneler oluşturulabilir ve işlenebilir.
+
+Özetle
+- Sınıflar ve Nesneler: Sınıflar, nesnelerin şablonudur. Nesneler, sınıfların örnekleridir.
+- Değişkenler ve Metotlar: Değişkenler, nesnelerin özelliklerini; metotlar, nesnelerin davranışlarını tanımlar.
+- Nesne Oluşturma ve Kullanma: new ile sınıftan nesne oluşturulur ve özelliklerine erişilir.
+- Kullanıcıdan Veri Alma: Scanner ile kullanıcıdan veri alınır ve nesneler oluşturulur.
+
+Önemli Noktalar
+- Basitlik: Temel kavramları öğrenmek için karmaşıklıktan kaçının.
+- Pratik Yapma: Öğrenilen bilgileri pekiştirmek için çeşitli örneklerle pratik yapın.
+- Soru Sorma: Anlaşılmayan noktaları netleştirmek için soru sorun.
