@@ -1,0 +1,15 @@
+Görev:
+
+Bir Kitap (Book) sınıfı oluşturun.  
+Bu sınıf aşağıdaki özelliklere ve gereksinimlere sahip olmalıdır:
+
+Gereksinimler:
+1. Kitabın adı (name), yazarı (author) ve sayfa sayısı (pageCount) olmak üzere üç özelliği bulunmalıdır.
+2. Kitap adı ve yazar adı boş olamaz, boş veya null bir değer girilirse "Bilinmiyor" olarak atanmalıdır.
+3. Eğer sayfa sayısı belirtilmezse, varsayılan olarak 0 atanmalıdır.
+4. Kitap bilgilerini ekrana yazdıran bilgileriGoster() metodu tanımlanmalıdır.
+
+İpuçları:
+- Constructor yöntemi kullanılarak farklı parametrelerle nesne oluşturma desteği sağlanmalıdır.
+- Kitap bilgilerini ekrana yazdırmak için bir metot tanımlanmalıdır.
+- Farklı senaryoları test etmek için bir BookApp sınıfı oluşturulmalıdır.
