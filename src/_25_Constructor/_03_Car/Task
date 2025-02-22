@@ -1,0 +1,17 @@
+Görev:
+
+Bir Car sınıfı oluşturun ve aşağıdaki gereksinimlere uygun hale getirin:
+
+Gereksinimler:
+1. Car sınıfı, marka (make), model (model) ve üretim yılı (year) değişkenlerine sahip olmalıdır.
+2. Constructor yöntemi kullanılarak, bu değişkenler başlangıç değerleri ile atanmalıdır.
+3. Aracın bilgilerini ekrana yazdıran displayInfo() metodu oluşturulmalıdır.
+4. toString() metodu override edilerek, aracın bilgileri metin olarak döndürülmelidir.
+5. Main sınıfında (CarApp), Car sınıfından iki farklı araç nesnesi oluşturulmalı ve:
+   - displayInfo() metodu ile ekrana yazdırılmalı.
+   - toString() metodu ile ekrana yazdırılmalıdır.
+
+İpuçları:
+- Constructor içinde değişkenlere geçerli değerler atanmalıdır.
+- Araba bilgilerini ekrana yazdırmak için iki farklı yöntem test edilmelidir.
+- Kod düzenli ve okunabilir olmalıdır.

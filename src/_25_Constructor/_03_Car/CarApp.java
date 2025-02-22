@@ -1,6 +1,6 @@
-package _25_Constructor._03_Example;
+package _25_Constructor._03_Car;
 
-public class TestCar {
+public class CarApp {
     public static void main(String[] args) {
         // 1. Yöntem: displayInfo metodu ile yazdırma
         System.out.println("1. Yöntem: displayInfo metodu ile yazdırma");
@@ -11,7 +11,7 @@ public class TestCar {
         car2.displayInfo();
 
         // 2. Yöntem: toString metodu ile yazdırma
-        System.out.println("\n2. Yöntem: toString metodu ile yazdırma");
+        System.out.println("2. Yöntem: toString metodu ile yazdırma");
         System.out.println(car1);
         System.out.println(car2);
     }
