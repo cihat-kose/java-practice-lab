@@ -1,0 +1,22 @@
+Görev:
+
+Bir Çalışan (Employee) sınıfı oluşturun ve aşağıdaki gereksinimlere uygun hale getirin:
+
+Gereksinimler:
+1. Employee sınıfı aşağıdaki üç özelliğe sahip olmalıdır:
+   - Çalışanın adı (name)
+   - Departmanı (department)
+   - Maaşı (salary)
+2. Employee sınıfı için dört constructor tanımlayın:
+   - Tüm özellikleri (`name`, `department`, `salary`) parametre olarak alan constructor.
+   - Sadece `name` ve `department` parametrelerini alan, `salary` değerini varsayılan olarak 3000 atayan constructor.
+   - Sadece `name` parametresini alan, `department` özelliğini "Unknown", `salary` değerini 3000 atayan constructor.
+   - Parametre almayan, tüm özellikleri varsayılan değerlerle başlatan (name: "Unknown", department: "Unknown", salary: 3000) constructor.
+3. Çalışanın bilgilerini ekrana yazdıran `displayInfo()` metodunu oluşturun.
+4. `EmployeeApp` sınıfında, `Employee` sınıfını kullanarak dört farklı çalışan oluşturun ve bilgilerini `displayInfo()` metodu ile ekrana yazdırın.
+
+İpuçları:
+- Constructor chaining kullanarak gereksiz kod tekrarını önleyin.
+- Değerleri varsayılan olarak belirlemek için bu() anahtar kelimesini kullanabilirsiniz.
+- Çalışan bilgilerini düzenli bir formatta yazdırın.
+
