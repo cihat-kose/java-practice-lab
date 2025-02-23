@@ -1,0 +1,21 @@
+
+Görev:
+
+Java kullanarak kişi bilgilerini yönetmek için bir program yazın.
+Bu program aşağıdaki gereksinimleri karşılamalıdır:
+
+Gereksinimler:
+1. Bir Person sınıfı oluşturun ve aşağıdaki özellikleri içersin:
+   - Kişinin adı (name), yaşı (age) ve hobileri (hobbies).
+   - Constructor kullanılarak kişi nesnesi oluşturulabilmelidir.
+   - Kişi bilgilerini ekrana yazdıran displayInfo() metodu bulunmalıdır.
+2. Kullanıcıdan sürekli olarak kişi bilgileri (ad, yaş, hobiler) alınmalıdır.
+3. Kullanıcı devam etmek istemediğinde, girilen tüm kişilerin bilgileri ekrana yazdırılmalıdır.
+4. Kullanıcı hobilerini virgülle ayırarak girmelidir ve program hobileri liste olarak saklamalıdır.
+5. Kullanıcı "hayır" yazdığında program sonlandırılmalıdır.
+
+İpuçları:
+- Kullanıcıdan giriş almak için Scanner sınıfını kullanın.
+- Kişi nesnelerini bir ArrayList içinde saklayın.
+- while döngüsü kullanarak kullanıcıdan tekrar tekrar giriş alın.
+
