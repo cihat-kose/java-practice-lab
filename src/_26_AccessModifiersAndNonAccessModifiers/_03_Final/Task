@@ -1,0 +1,10 @@
+Görev:
+
+1. Bir `FinalExample` sınıfı oluşturun.
+2. Bu sınıfta bir `final` değişken ve bir `final` metod tanımlayın.
+3. `FinalExampleApp` sınıfında bu değişken ve metoda erişimi gösterin.
+
+İpuçları:
+- `final` değişkenler, ilk değer atandıktan sonra değiştirilemez.
+- `final` metotlar, alt sınıflar tarafından override edilemez.
+- `final` sınıflar, başka sınıflar tarafından miras alınamaz.

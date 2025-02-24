@@ -1,7 +1,0 @@
-
-Task:
-
-1. Bir `FinalExample` sınıfı oluşturun.
-2. Bu sınıfta bir `final` değişken ve bir `final` metod tanımlayın.
-3. `TestFinalExample` sınıfında bu değişken ve metoda erişimi gösterin.
-

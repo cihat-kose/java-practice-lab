@@ -1,6 +1,6 @@
-package _26_AccessModifiersAndNonAccessModifiers._03_Example;
+package _26_AccessModifiersAndNonAccessModifiers._03_Final;
 
-public class TestFinalExample {
+public class FinalExampleApp {
     public static void main(String[] args) {
         FinalExample example = new FinalExample();
 
