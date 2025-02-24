@@ -1,0 +1,11 @@
+Görev:
+
+1. Bir `StaticExample` sınıfı oluşturun.
+2. Bu sınıfta bir `static` değişken ve bir `static` metod tanımlayın.
+3. `StaticExampleApp` sınıfında bu değişken ve metoda erişimi gösterin.
+
+İpuçları:
+- `static` değişkenler, sınıfa aittir ve nesne oluşturmadan erişilebilir.
+- `static` metotlar, sınıfa aittir ve doğrudan sınıf adıyla çağrılabilir.
+- `static` üyeleri çağırırken nesne oluşturup oluşturmamayı test edebilirsiniz.
+
