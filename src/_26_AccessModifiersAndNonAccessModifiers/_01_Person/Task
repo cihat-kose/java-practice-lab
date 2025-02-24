@@ -1,0 +1,12 @@
+Görev:
+
+1. Bir `Person` sınıfı oluşturun.
+2. Bu sınıfta `public`, `private`, `protected` ve `default` erişim belirleyicilerine sahip değişkenler tanımlayın.
+3. `PersonApp` sınıfında bu değişkenlere erişimi test edin.
+
+İpuçları:
+- `public` değişkenlere her yerden erişilebilir.
+- `private` değişkenlere sadece aynı sınıf içinden erişilebilir.
+- `protected` değişkenlere aynı paket içinden ve alt sınıflardan erişilebilir.
+- `default` değişkenlere sadece aynı paket içinden erişilebilir.
+- `private` değişkene doğrudan erişmeyi deneyin ve sonucu gözlemleyin.

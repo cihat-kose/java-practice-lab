@@ -1,6 +1,0 @@
-
-Task:
-
-1. Bir `Person` sınıfı oluşturun.
-2. Bu sınıfta `public`, `private`, `protected` ve `default` değişkenler tanımlayın.
-3. `TestPerson` sınıfında bu değişkenlere erişimi test edin.
