@@ -1,0 +1,11 @@
+
+Görev:
+
+1. Bir `StaticFinalValue` sınıfı oluşturun.
+2. Bu sınıfta bir `static final` değişken tanımlayın ve bu değişkene değer atayın.
+3. `StaticFinalValueApp` sınıfında bu değişkene erişimi gösterin.
+
+İpuçları:
+- `static final` değişkenler sınıfa aittir ve değeri değiştirilemez.
+- `static final` değişkenler doğrudan sınıf adıyla erişilebilir.
+- Sabit değişkenler genellikle büyük harfle ve `_` kullanılarak tanımlanır (örn: `MAX_VALUE`).
