@@ -1,0 +1,9 @@
+Görev:
+
+1. Bir `Person` sınıfı oluşturun.
+2. Bu sınıfta `private` bir `name` değişkeni tanımlayın ve bir `public` metot ile bu ismi ekrana yazdırın.
+3. `PersonApp` sınıfında `printName` metodunu çağırarak ismi ekrana yazdırın.
+
+İpuçları:
+- `private` değişkenler doğrudan dış sınıflardan erişilemez.
+- `public` metot, `private` değişkenin değerini dışarıya aktarmak için kullanılmalıdır.

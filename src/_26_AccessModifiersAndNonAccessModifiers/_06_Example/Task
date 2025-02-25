@@ -1,6 +1,0 @@
-
-Task:
-
-1. Bir `Person` sınıfı oluşturun.
-2. Bu sınıfta `private` bir isim (`name`) değişkeni tanımlayın ve bir `public` metod ile bu ismi ekrana yazdırın.
-3. `TestPerson` sınıfında isim değişkenine erişim sağlayın ve ismi ekrana yazdırın.
