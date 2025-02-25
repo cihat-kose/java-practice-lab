@@ -1,7 +1,0 @@
-
-Task:
-
-1. Bir `MathUtils` sınıfı oluşturun.
-2. Bu sınıfta `public static` bir `add` metod tanımlayın. Bu metod iki sayıyı toplasın.
-3. `TestMathUtils` sınıfında bu metodu kullanarak iki sayıyı toplayın ve sonucu ekrana yazdırın.
-

@@ -1,0 +1,10 @@
+
+Görev:
+
+1. Bir `MathUtils` sınıfı oluşturun.
+2. Bu sınıfta `public static` bir `add` metodu tanımlayın. Bu metot iki sayıyı toplasın.
+3. `MathUtilsApp` sınıfında bu metodu kullanarak iki sayıyı toplayın ve sonucu ekrana yazdırın.
+
+İpuçları:
+- `static` metotlar nesne oluşturmadan doğrudan sınıf adıyla çağrılabilir.
+- `add` metodu iki tamsayı almalı ve toplamlarını döndürmelidir.

@@ -1,6 +1,6 @@
-package _26_AccessModifiersAndNonAccessModifiers._05_Example;
+package _26_AccessModifiersAndNonAccessModifiers._05_MathUtils;
 
-public class TestMathUtils {
+public class MathUtilsApp {
     public static void main(String[] args) {
         // İki sayıyı topla ve sonucu ekrana yazdır
         int sum = MathUtils.add(5, 10);
