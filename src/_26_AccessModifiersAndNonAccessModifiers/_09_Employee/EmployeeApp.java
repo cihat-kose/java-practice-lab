@@ -1,6 +1,6 @@
-package _26_AccessModifiersAndNonAccessModifiers._09_Example;
+package _26_AccessModifiersAndNonAccessModifiers._09_Employee;
 
-public class TestEmployee {
+public class EmployeeApp {
     public static void main(String[] args) {
         // Employee nesnesi oluştur ve kimlik değerini ata
         Employee employee = new Employee(12345);

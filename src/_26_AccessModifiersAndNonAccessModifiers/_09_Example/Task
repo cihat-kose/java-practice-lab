@@ -1,6 +1,0 @@
-
-Task:
-
-1. Bir `Employee` sınıfı oluşturun ve `private final` bir kimlik (`id`) değişkeni tanımlayın.
-2. `Employee` sınıfının kurucusunda (`constructor`) bu kimlik değişkenine değer atayın.
-3. `TestEmployee` sınıfında bir `Employee` nesnesi oluşturun ve kimlik değerini ekrana yazdırın.

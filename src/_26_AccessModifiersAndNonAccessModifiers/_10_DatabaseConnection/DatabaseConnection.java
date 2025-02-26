@@ -1,4 +1,4 @@
-package _26_AccessModifiersAndNonAccessModifiers._10_Example;
+package _26_AccessModifiersAndNonAccessModifiers._10_DatabaseConnection;
 
 public class DatabaseConnection {
     // private static final değişken: Sınıfa ait tek bir örneği tutar ve değiştirilemez

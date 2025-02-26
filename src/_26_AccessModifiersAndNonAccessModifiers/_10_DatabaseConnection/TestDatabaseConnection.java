@@ -1,4 +1,4 @@
-package _26_AccessModifiersAndNonAccessModifiers._10_Example;
+package _26_AccessModifiersAndNonAccessModifiers._10_DatabaseConnection;
 
 public class TestDatabaseConnection {
     public static void main(String[] args) {

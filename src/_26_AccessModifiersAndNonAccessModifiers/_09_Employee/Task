@@ -1,0 +1,10 @@
+Görev:
+
+1. Bir `Employee` sınıfı oluşturun ve `private final` bir kimlik (`id`) değişkeni tanımlayın.
+2. `Employee` sınıfının kurucusunda (`constructor`) bu kimlik değişkenine değer atayın.
+3. `EmployeeApp` sınıfında bir `Employee` nesnesi oluşturun ve kimlik değerini ekrana yazdırın.
+
+İpuçları:
+- `final` değişkenler yalnızca bir kez atanabilir ve değiştirilemez.
+- `private final` değişkenlere doğrudan erişilemez, sadece sınıf içinde kullanılabilir.
+- `printId` metodu, kimlik değerini dış dünyaya göstermek için kullanılmalıdır.
