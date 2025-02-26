@@ -1,0 +1,11 @@
+
+Görev:
+
+1. Bir `GameSettings` sınıfı oluşturun.
+2. Bu sınıfta `private static` bir `score` değişkeni tanımlayın ve `public static` metotlar ile bu değişkeni artırın ve okuyun.
+3. `GameSettingsApp` sınıfında bu metotları kullanarak skoru artırın ve ekrana yazdırın.
+
+İpuçları:
+- `private static` değişkenler sadece aynı sınıf içinden erişilebilir.
+- `public static` metotlar nesne oluşturmadan çağrılabilir.
+- Skor artırma işlemi için bir metot, skor değerini okumak için başka bir metot oluşturun.

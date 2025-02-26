@@ -1,8 +1,8 @@
-package _26_AccessModifiersAndNonAccessModifiers._08_Example;
+package _26_AccessModifiersAndNonAccessModifiers._08_GameSettings;
 
-public class TestGameSettings {
+public class GameSettingsApp {
     public static void main(String[] args) {
-        // Skoru arttır
+        // Skoru artır
         GameSettings.increaseScore();
         GameSettings.increaseScore();
 

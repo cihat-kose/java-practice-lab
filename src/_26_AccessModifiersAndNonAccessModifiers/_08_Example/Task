@@ -1,6 +1,0 @@
-
-Task:
-
-1. Bir `GameSettings` sınıfı oluşturun.
-2. Bu sınıfta `private static` bir `score` değişkeni tanımlayın ve `public static` metodlar ile bu değişkeni arttırın ve okuyun.
-3. `TestGameSettings` sınıfında bu metodları kullanarak skoru arttırın ve ekrana yazdırın.
