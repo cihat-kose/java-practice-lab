@@ -1,0 +1,10 @@
+
+Görev:
+
+1. Bir `Config` sınıfı oluşturun.
+2. Bu sınıfta `public static final` bir `VERSION` değişkeni tanımlayın.
+3. `ConfigApp` sınıfında bu değişkene erişim sağlayın ve ekrana yazdırın.
+
+İpuçları:
+- `static final` değişkenler, sınıfa aittir ve değeri değiştirilemez.
+- `static final` değişkenler doğrudan sınıf adıyla çağrılabilir.

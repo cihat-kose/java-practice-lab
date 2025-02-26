@@ -1,6 +1,0 @@
-
-Task:
-
-1. Bir `Config` sınıfı oluşturun.
-2. Bu sınıfta `public static final` bir `VERSION` değişkeni tanımlayın.
-3. `TestConfig` sınıfında bu değişkene erişim sağlayın ve ekrana yazdırın.
