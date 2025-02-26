@@ -1,8 +1,11 @@
-
-Task:
+Görev:
 
 1. Bir `DatabaseConnection` sınıfı oluşturun ve bu sınıfta `private static final` bir `instance` değişkeni tanımlayın.
 2. `DatabaseConnection` sınıfında bir `private` kurucu (`constructor`) tanımlayın.
 3. `getInstance` isimli bir `public static` metod tanımlayın ve `instance` değişkenini döndürün.
-4. `TestDatabaseConnection` sınıfında `DatabaseConnection` sınıfından bir örnek alın ve bağlantı mesajını ekrana yazdırın.
-5. Singleton deseni: Bu desen, bir sınıfın sadece bir örneğinin oluşturulmasını garanti eder ve bu örneğe global erişim sağlar.
+4. `DatabaseConnectionApp` sınıfında `DatabaseConnection` sınıfından bir örnek alın ve bağlantı mesajını ekrana yazdırın.
+
+İpuçları:
+- Singleton deseni, bir sınıfın sadece bir örneğinin oluşturulmasını garanti eder.
+- `private` kurucu, dışarıdan doğrudan nesne oluşturulmasını engeller.
+- `getInstance` metodu, sınıfın tek örneğini döndürmelidir.
