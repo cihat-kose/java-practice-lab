@@ -1,0 +1,10 @@
+Görev:
+
+1. `DaysOfWeek` enum'una bir `isWeekend()` metodu ekleyin.
+   Bu metot, eğer gün hafta sonu ise `true`, değilse `false` döndürsün.
+2. `DaysOfWeekApp` sınıfında bu metodu kullanarak, bugünün hafta sonu olup olmadığını ekrana yazdırın.
+
+İpuçları:
+- Enum içinde metot tanımlamak, enum'ları daha güçlü ve esnek hale getirir.
+- `this` anahtar kelimesini kullanarak mevcut enum sabitini kontrol edebilirsiniz.
+- Enum metodunu çağırırken `enumSabit.isWeekend()` şeklinde kullanılabilir.

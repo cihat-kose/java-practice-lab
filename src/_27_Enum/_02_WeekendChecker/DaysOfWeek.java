@@ -1,10 +1,9 @@
-package _27_Enum._02_Example;
+package _27_Enum._02_WeekendChecker;
 
 public enum DaysOfWeek {
     PAZARTESI, SALI, CARSAMBA, PERSEMBE, CUMA, CUMARTESI, PAZAR;
 
-    // Enum içine metot tanımlama
-    public boolean isWeekend() {
+    public boolean isWeekend() { // Enum içine metot tanımlama
         return this == CUMARTESI || this == PAZAR;
     }
 }
