@@ -1,0 +1,8 @@
+Görev:
+
+1. `DaysOfWeek` adında bir enum oluşturun ve hafta günlerini (PAZARTESİ, SALI, ÇARŞAMBA, PERŞEMBE, CUMA, CUMARTESİ, PAZAR) bu enum'a ekleyin.
+2. `DaysOfWeekApp` sınıfında bu enum'u kullanarak haftanın hangi gününde olduğunuzu ekrana yazdırın.
+
+İpuçları:
+- Enum sabitlerini tanımlarken büyük harf kullanın.
+- Enum, belirli bir grup sabit değeri temsil eder ve genellikle `switch-case` veya karşılaştırmalarda kullanılır.
