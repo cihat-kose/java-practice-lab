@@ -1,4 +1,4 @@
-package _27_Enum._03_Example;
+package _27_Enum._03_WorkingHouse;
 
 public enum DaysOfWeek {
     PAZARTESI("09:00-17:00"),
@@ -9,15 +9,14 @@ public enum DaysOfWeek {
     CUMARTESI("10:00-14:00"),
     PAZAR("Kapalı");
 
-    private String workingHours; // Günün çalışma saatleri
+    private final String workingHours; // Günün çalışma saatleri
 
-    // Constructor: Enum sabitlerinin çalışma saatlerini başlatır
-    private DaysOfWeek(String workingHours) {
+    private DaysOfWeek(String workingHours) { // Constructor: Çalışma saatlerini başlatır
         this.workingHours = workingHours;
     }
 
-    // Çalışma saatlerini döndüren metot
-    public String getWorkingHours() {
+    public String getWorkingHours() { // Çalışma saatlerini döndüren metot
         return workingHours;
     }
 }
+

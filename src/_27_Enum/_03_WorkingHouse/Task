@@ -1,0 +1,10 @@
+Görev:
+
+1. `DaysOfWeek` enum'una her gün için bir çalışma saatleri bilgisi (`workingHours`) ekleyin, örneğin "09:00-17:00".
+2. Bu bilgiyi saklamak için enum'a bir özellik ekleyin ve constructor ile bu özelliği başlatın.
+3. `DaysOfWeekApp` sınıfında, seçilen günün çalışma saatlerini ekrana yazdırın.
+
+İpuçları:
+- Enum'lar, sınıflar gibi özellikler ve constructor'lar içerebilir.
+- `private` değişken ile çalışma saatlerini saklayabilirsiniz.
+- `getWorkingHours()` metodu ile bu değeri dışarıya aktarmalısınız.
