@@ -1,5 +1,4 @@
-
-Task:
+Görev:
 İçecek Sipariş Sistemini Geliştirme
 
 Amaç:
@@ -10,7 +9,7 @@ bu özellikleri projede kullanma becerilerinizi geliştireceksiniz.
 
 Görev Açıklaması:
 1. Enum Genişletme:
-   - `Drinks` enum'una içeceklerin fiyatlarını saklayacak bir alan ekleyin.
+   - Drinks enum'una içeceklerin fiyatlarını saklayacak bir alan ekleyin.
    - Her içecek için uygun bir fiyat belirleyin (örneğin, Cola için 1.5 TL, Su için 0.5 TL).
 
 2. Sipariş Detaylarının Genişletilmesi:
@@ -18,7 +17,7 @@ Görev Açıklaması:
    - Sipariş edilen tüm içeceklerin toplam tutarını hesaplayarak ekrana yazdırın.
 
 3. Toplam Tutarı Hesaplayan Metot:
-   - `Order` sınıfında, sipariş edilen içeceklerin toplam tutarını hesaplayıp döndüren bir metot oluşturun.
+   - Order sınıfında, sipariş edilen içeceklerin toplam tutarını hesaplayıp döndüren bir metot oluşturun.
      Bu metodu sipariş detayları ile birlikte göstermek üzere çağırın.
 
 4. Kullanıcı Etkileşimi:

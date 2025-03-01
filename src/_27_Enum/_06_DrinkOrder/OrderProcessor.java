@@ -1,4 +1,4 @@
-package _27_Enum._06_Example;
+package _27_Enum._06_DrinkOrder;
 
 import java.util.Scanner;
 
@@ -7,20 +7,30 @@ import java.util.Scanner;
  */
 public class OrderProcessor {
     public static void main(String[] args) {
-        BeverageType selectedBeverage = takeSelectBeverage();
-
-        Scanner scanner = new Scanner(System.in);
-        System.out.print("Kaç adet? ");
-        int pcs = scanner.nextInt();
-
         BeverageOrder order = new BeverageOrder();
-        order.addOrder(selectedBeverage, pcs);
+        Scanner scanner = new Scanner(System.in);
+
+        while (true) {
+            BeverageType selectedBeverage = takeSelectBeverage();
+
+            System.out.print("Kaç adet? ");
+            int pcs = scanner.nextInt();
+            order.addOrder(selectedBeverage, pcs);
+
+            System.out.print("Başka bir içecek eklemek ister misiniz? (Evet/Hayır): ");
+            scanner.nextLine();
+            String continueOrder = scanner.nextLine();
+            if (continueOrder.equalsIgnoreCase("Hayır")) {
+                break;
+            }
+        }
 
         order.showOrderDetails();
     }
 
     private static BeverageType takeSelectBeverage() {
         System.out.println("İçecek Seçiniz:");
+
         for (BeverageType beverage : BeverageType.values()) {
             System.out.println(beverage.ordinal() + 1 + ". " + beverage.getName());
         }
@@ -35,6 +45,7 @@ public class OrderProcessor {
         return BeverageType.values()[selection - 1];
     }
 }
+
 
 
 /*

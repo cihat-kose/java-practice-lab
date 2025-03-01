@@ -1,4 +1,4 @@
-package _27_Enum._06_Example;
+package _27_Enum._06_DrinkOrder;
 
 import java.util.HashMap;
 import java.util.Map;
@@ -7,8 +7,7 @@ import java.util.Map;
  * BeverageOrder sınıfı, bir içecek siparişini temsil eder ve sipariş detaylarını saklar.
  */
 public class BeverageOrder {
-    // İçecek türü ve sipariş adedini saklayan veri yapısı
-    private Map<BeverageType, Integer> orderDetails;
+    private final Map<BeverageType, Integer> orderDetails;
 
     /**
      * Constructor: Yeni bir sipariş nesnesi oluşturur.
@@ -24,12 +23,24 @@ public class BeverageOrder {
      * @param pcs      Sipariş edilen adet
      */
     public void addOrder(BeverageType beverage, int pcs) {
-        orderDetails.put(beverage, pcs);
+        orderDetails.put(beverage, orderDetails.getOrDefault(beverage, 0) + pcs);
+    }
+
+    /**
+     * Sipariş edilen tüm içeceklerin toplam tutarını hesaplar.
+     *
+     * @return Toplam tutar
+     */
+    public double calculateTotal() {
+        double total = 0.0;
+        for (Map.Entry<BeverageType, Integer> entry : orderDetails.entrySet()) {
+            total += entry.getKey().getPrice() * entry.getValue();
+        }
+        return total;
     }
 
     /**
      * Sipariş detaylarını ekrana yazdırır.
-     * Her içeceğin adı, adedi, birim fiyatı ve toplam fiyatı gösterilir.
      */
     public void showOrderDetails() {
         System.out.println("Sipariş Detayı:");

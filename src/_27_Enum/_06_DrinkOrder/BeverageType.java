@@ -1,4 +1,4 @@
-package _27_Enum._06_Example;
+package _27_Enum._06_DrinkOrder;
 
 /**
  * BeverageType enum'u, çeşitli içecek türlerini ve bu içeceklerin özelliklerini temsil eder.
@@ -10,8 +10,8 @@ public enum BeverageType {
     ICE_TEA("Ice Tea", 1.3),
     FRUIT_JUICE("Meyve Suyu", 1.8);
 
-    private String name;  // İçeceğin adı
-    private double price; // İçeceğin fiyatı
+    private final String name;
+    private final double price;
 
     /**
      * Constructor: Her içecek türü için ad ve fiyat değerlerini ayarlar.
@@ -19,7 +19,7 @@ public enum BeverageType {
      * @param name  İçecek adı
      * @param price İçecek fiyatı
      */
-    private BeverageType(String name, double price) {
+    BeverageType(String name, double price) {
         this.name = name;
         this.price = price;
     }
@@ -42,6 +42,7 @@ public enum BeverageType {
         return price;
     }
 }
+
 
 
 /*
