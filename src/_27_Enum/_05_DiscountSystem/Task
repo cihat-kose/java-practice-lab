@@ -1,0 +1,11 @@
+Görev:
+
+1. `DaysOfWeek` enum'una her gün için bir indirim yüzdesi ekleyin (örneğin, Pazartesi %10, Pazar %20).
+2. Enum içinde bu indirim yüzdesini döndüren bir metot oluşturun.
+3. `DiscountCalculatorApp` sınıfında, seçilen günün indirim yüzdesine göre bir ürünün fiyatını hesaplayın ve indirimli fiyatı ekrana yazdırın.
+
+İpuçları:
+- Enum'lar, sabitlerle birlikte ek bilgileri (örneğin, indirim yüzdesi) tutmak için kullanılabilir.
+- `getDiscountPercentage()` metodu ile günlük indirim oranını öğrenebilirsiniz.
+- `calculateDiscountedPrice()` metodu ile bir ürünün indirimli fiyatını hesaplayabilirsiniz.
+- Kullanıcıdan gün seçimini almak için yardımcı bir metot oluşturabilirsiniz.
