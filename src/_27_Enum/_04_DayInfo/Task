@@ -1,0 +1,10 @@
+Görev:
+
+1. `DaysOfWeek` enum'unu kullanarak bir switch-case yapısı oluşturun.
+2. Seçilen güne göre hafta içi veya hafta sonu olduğunu ekrana yazdırın.
+3. Günün çalışma saatlerini de gösterin.
+
+İpuçları:
+- Switch-case yapıları, enum'larla birlikte güçlü bir karar yapısı oluşturmak için kullanılabilir.
+- `isWeekend()` metodu, günün hafta sonu olup olmadığını kontrol etmek için kullanılabilir.
+- Çalışma saatlerini göstermek için `getWorkingHours()` metodu kullanılmalıdır.

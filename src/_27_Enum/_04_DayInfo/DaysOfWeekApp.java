@@ -1,20 +1,15 @@
-package _27_Enum._04_Example;
+package _27_Enum._04_DayInfo;
 
-public class DayInfoDisplay {
+public class DaysOfWeekApp {
     public static void main(String[] args) {
         DaysOfWeek today = DaysOfWeek.CUMA; // Enum sabiti seçimi
 
         // Switch-case yapısı kullanarak gün bilgisi işleme
         switch (today) {
-            case PAZARTESI:
-            case SALI:
-            case CARSAMBA:
-            case PERSEMBE:
-            case CUMA:
+            case PAZARTESI, SALI, CARSAMBA, PERSEMBE, CUMA:
                 System.out.println("Bugün hafta içi.");
                 break;
-            case CUMARTESI:
-            case PAZAR:
+            case CUMARTESI, PAZAR:
                 System.out.println("Bugün hafta sonu.");
                 break;
         }
