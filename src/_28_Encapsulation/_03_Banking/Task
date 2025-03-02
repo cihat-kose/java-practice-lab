@@ -25,4 +25,3 @@ Gereksinimler:
 - Encapsulation prensibini uygulayın: Verileri korumak için değişkenleri `private` tanımlayın ve bunlara erişimi `getter/setter` metotları ile sağlayın.
 - Bakiye kontrolü ekleyin: `withdraw()` metodunda, bakiyeden fazla para çekmeye çalışan kullanıcılara hata mesajı gösterin.
 - Hesap hareketlerini bir `List<Transaction>` içinde saklayın: Her işlem eklendiğinde bu liste güncellenmelidir.
-
