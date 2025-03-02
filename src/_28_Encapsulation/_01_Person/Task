@@ -1,0 +1,17 @@
+Görev:
+
+Encapsulation (kapsülleme) prensibini kullanarak kişi bilgilerini yöneten bir Java programı yazın.
+
+Gereksinimler:
+1. `Person` adında bir sınıf oluşturun ve aşağıdaki özellikleri içersin:
+   - `name` (ad): Public olarak tanımlanmalı.
+   - `age` (yaş): Private olarak tanımlanmalı ve negatif değer alamamalıdır.
+2. `Person` sınıfında, `age` özelliğine erişmek ve güncellemek için getter ve setter metotları yazılmalıdır.
+   - `setAge(int age)`: Yaş negatif bir değer alamaz. Eğer negatif girilirse, hata mesajı verilmeli.
+3. `Main` sınıfında (`EncapsulationApp`), bir `Person` nesnesi oluşturulmalı ve ad ile yaş ayarlanmalıdır.
+4. Son olarak, bu nesnenin adı ve yaşı ekrana yazdırılmalıdır.
+
+İpuçları:
+-  Encapsulation prensibi gereği, `age` değişkeni dış dünyadan gizlenmeli (`private`) ve güvenli bir şekilde erişilmelidir.
+- `setAge(int age)` metodu yaşın doğruluğunu kontrol etmelidir.
+- `name` değişkeni `public` olabilir, çünkü burada doğrudan erişime izin veriyoruz.
