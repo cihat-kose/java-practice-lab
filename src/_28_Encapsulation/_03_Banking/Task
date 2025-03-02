@@ -1,0 +1,28 @@
+Görev:
+
+Encapsulation prensibini kullanarak banka hesap yönetimini içeren bir Java uygulaması geliştirin.
+
+Gereksinimler:
+1. `BankAccount` adında bir sınıf oluşturun ve aşağıdaki müşteri bilgilerini içersin:
+   - `firstName` (ad)
+   - `lastName` (soyad)
+   - `accountNumber` (hesap numarası)
+   - `balance` (hesap bakiyesi)
+   - `transactions` (hesap hareketleri listesi)
+2. Müşteri bilgilerini **private** olarak tanımlayın ve bunlara erişim için getter/setter metotları oluşturun.
+3. `Transaction` adında bir sınıf oluşturun ve aşağıdaki hesap hareketi bilgilerini içersin:
+   - `date` (tarih)
+   - `description` (açıklama)
+   - `amount` (miktar)
+   - `transactionType` (işlem türü: "Deposit" veya "Withdrawal")
+4. `BankAccount` sınıfında hesap hareketleri eklemek için bir metot oluşturun ve bu hareketleri bir listede saklayın.
+5. `BankAccountApp` adında bir sınıf oluşturun ve:
+   - Bir `BankAccount` nesnesi oluşturun.
+   - Hesaba birkaç işlem ekleyin (para yatırma ve çekme).
+   - Güncel hesap bilgilerini ve hesap hareketlerini ekrana yazdırın.
+
+İpuçları:
+- Encapsulation prensibini uygulayın: Verileri korumak için değişkenleri `private` tanımlayın ve bunlara erişimi `getter/setter` metotları ile sağlayın.
+- Bakiye kontrolü ekleyin: `withdraw()` metodunda, bakiyeden fazla para çekmeye çalışan kullanıcılara hata mesajı gösterin.
+- Hesap hareketlerini bir `List<Transaction>` içinde saklayın: Her işlem eklendiğinde bu liste güncellenmelidir.
+
