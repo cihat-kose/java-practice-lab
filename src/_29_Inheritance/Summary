@@ -41,7 +41,7 @@ Java’da Inheritance Kullanımı:
 
 - Alt sınıf, üst sınıfın tüm `public` ve `protected` özelliklerini ve metotlarını miras alır.
   `private` olanlara ise erişim sağlayamaz.
-- Alt sınıf, üst sınıftan miras aldığı metotları **override** ederek (üstüne yazarak) değiştirebilir
+- Alt sınıf, üst sınıftan miras aldığı metotları override ederek (üstüne yazarak) değiştirebilir
   veya kendi özel metotlarını ekleyebilir.
 
 Inheritance Örnekleri:
@@ -61,7 +61,7 @@ Inheritance Örnekleri:
 
 Kalıtımın Sınırlamaları:
 
-- Java'da bir sınıf sadece **tek bir** sınıftan miras alabilir. Çoklu kalıtım (multiple inheritance)
+- Java'da bir sınıf sadece tek bir sınıftan miras alabilir. Çoklu kalıtım (multiple inheritance)
   sınıflar arasında desteklenmez.
 - Java’da çoklu kalıtımı desteklemek için **interface** yapısı kullanılır.
 
