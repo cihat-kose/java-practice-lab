@@ -1,0 +1,17 @@
+Görev: Basit Hayvanlar Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, inheritance (kalıtım) prensibini kullanarak, sınıflar arasında nasıl hiyerarşi kurabileceğinizi öğrenmektir.
+Bu süreçte, bir üst sınıftan (superclass) özelliklerin ve metotların nasıl miras alındığını göreceksiniz.
+
+Görev Açıklaması:
+1. `Animal` adında bir sınıf oluşturun. Bu sınıf, `name` (ad) ve `age` (yaş) adında iki özelliğe sahip olsun.
+2. `Animal` sınıfında, `makeSound()` adında bir metot tanımlayın. Bu metot genel bir ses çıkarsın.
+3. `Dog` ve `Cat` adında iki alt sınıf oluşturun. Bu sınıflar `Animal` sınıfından miras alsın.
+4. `Dog` ve `Cat` sınıflarında `makeSound()` metodunu özelleştirin (override) ve bu sınıfların kendilerine has sesleri çıkarmalarını sağlayın.
+5. `AnimalApp` adında bir sınıf oluşturun. 
+   Bu sınıfta, `Dog` ve `Cat` nesneleri oluşturun ve ses çıkarma davranışlarını (`makeSound()`) ekrana yazdırın.
+
+İpucu:
+- Üst sınıf (superclass), ortak özellikleri ve metotları içerir. Alt sınıflar (subclass) ise bu özellikleri ve metotları miras alır ve özelleştirebilir.
+- Alt sınıflarda, üst sınıftan miras alınan bir metodu tekrar tanımlayarak özelleştirme işlemini yapabilirsiniz. Bu işlem `@Override` anotasyonu ile yapılır.

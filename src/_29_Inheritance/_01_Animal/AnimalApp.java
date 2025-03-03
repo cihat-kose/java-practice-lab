@@ -1,6 +1,6 @@
-package _29_Inheritance._01_Example;
+package _29_Inheritance._01_Animal;
 
-public class AnimalManager {
+public class AnimalApp {
     public static void main(String[] args) {
         // Dog nesnesi oluşturuluyor
         Dog dog = new Dog("Max", 5);
