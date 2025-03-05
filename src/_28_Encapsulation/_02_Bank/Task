@@ -7,7 +7,7 @@ Gereksinimler:
    - `name` (ad)
    - `accountNumber` (hesap numarası)
    - `balance` (hesap bakiyesi)
-2. Müşteri bilgilerini **private** olarak tanımlayın ve bunlara erişmek için getter/setter metotları oluşturun.
+2. Müşteri bilgilerini private olarak tanımlayın ve bunlara erişmek için getter/setter metotları oluşturun.
 3. `BankAccount` sınıfında:
    - Para yatırma (deposit) metodu: Pozitif bir miktar girildiğinde bakiyeye eklenmelidir.
    - Para çekme (withdraw) metodu: Bakiyeden fazla para çekilmesine izin verilmemeli, yetersiz bakiye durumunda uyarı verilmelidir.

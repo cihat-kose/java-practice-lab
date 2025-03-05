@@ -9,12 +9,12 @@ Gereksinimler:
    - `accountNumber` (hesap numarası)
    - `balance` (hesap bakiyesi)
    - `transactions` (hesap hareketleri listesi)
-2. Müşteri bilgilerini **private** olarak tanımlayın ve bunlara erişim için getter/setter metotları oluşturun.
+2. Müşteri bilgilerini private olarak tanımlayın ve bunlara erişim için getter/setter metotları oluşturun.
 3. `Transaction` adında bir sınıf oluşturun ve aşağıdaki hesap hareketi bilgilerini içersin:
    - `date` (tarih)
    - `description` (açıklama)
    - `amount` (miktar)
-   - `transactionType` (işlem türü: "Deposit" veya "Withdrawal")
+   - `transactionType` (işlem türü: "Deposit" veya "Withdraw")
 4. `BankAccount` sınıfında hesap hareketleri eklemek için bir metot oluşturun ve bu hareketleri bir listede saklayın.
 5. `BankAccountApp` adında bir sınıf oluşturun ve:
    - Bir `BankAccount` nesnesi oluşturun.
