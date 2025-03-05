@@ -1,4 +1,4 @@
-package _29_Inheritance._02_Example;
+package _29_Inheritance._02_Shape;
 
 // Rectangle sınıfı, Shape sınıfından miras alır
 public class Rectangle extends Shape {

@@ -1,0 +1,16 @@
+Görev: Geometrik Şekiller Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, inheritance kullanarak geometrik şekillerin alanlarını hesaplamayı öğrenmektir.
+Bu süreçte, alt sınıfların (subclass) metotları nasıl özelleştirebileceğini göreceksiniz.
+
+Görev Açıklaması:
+1. `Shape` adında bir sınıf oluşturun. Bu sınıf, `calculateArea()` adında bir metot içersin.
+2. `Circle` ve `Rectangle` adında iki alt sınıf oluşturun. Bu sınıflar `Shape` sınıfından miras alsın.
+3. `Circle` sınıfında `radius` (yarıçap), `Rectangle` sınıfında ise `length` (uzunluk) ve `width` (genişlik) özellikleri olsun.
+4. Her iki alt sınıfta da `calculateArea()` metodunu özelleştirerek (override) alanı hesaplayın.
+5. `ShapeApp` adında bir sınıf oluşturun. Bu sınıfta hem `Circle` hem de `Rectangle` nesneleri oluşturup alanlarını ekrana yazdırın.
+
+İpucu:
+- Üst sınıfta genel bir `calculateArea()` metodu tanımlayın. Alt sınıflarda bu metodu özelleştirerek şekle özel alan hesaplamalarını yapabilirsiniz.
+- `Circle` sınıfında alanı `π * r^2` formülüyle, `Rectangle` sınıfında ise `length * width` formülüyle hesaplayabilirsiniz.

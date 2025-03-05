@@ -1,6 +1,6 @@
-package _29_Inheritance._02_Example;
+package _29_Inheritance._02_Shape;
 
-public class ShapeManager {
+public class ShapeApp {
     public static void main(String[] args) {
         // Circle nesnesi oluşturuluyor
         Circle circle = new Circle(5.0);
@@ -15,4 +15,3 @@ public class ShapeManager {
         rectangle.calculateArea();  // Rectangle Area: 24.0
     }
 }
-

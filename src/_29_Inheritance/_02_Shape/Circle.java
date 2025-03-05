@@ -1,4 +1,4 @@
-package _29_Inheritance._02_Example;
+package _29_Inheritance._02_Shape;
 
 // Circle sınıfı, Shape sınıfından miras alır
 public class Circle extends Shape {
