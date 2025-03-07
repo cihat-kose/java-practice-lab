@@ -1,11 +1,11 @@
-package _29_Inheritance._03_Example;
+package _29_Inheritance._03_Bank;
 
 // CheckingAccount sınıfı, BankAccount sınıfından miras alır
 public class CheckingAccount extends BankAccount {
 
-    // Yapıcı metot (constructor), üst sınıftaki yapıcı metodu çağırır
+    // Yapıcı metot (constructor)
     public CheckingAccount(int accountNumber, double balance) {
-        super(accountNumber, balance); // Üst sınıftaki accountNumber ve balance özelliklerini başlatır
+        super(accountNumber, balance);
     }
 
     // Para çekme metodunu özelleştiriyoruz (override)
@@ -15,7 +15,7 @@ public class CheckingAccount extends BankAccount {
             System.out.println("Yetersiz bakiye: " + amount + " çekilemez.");
         } else {
             balance -= amount;
-            System.out.println("Çekilen: " + amount + ". Kalan bakiye: " + balance);
+            System.out.println("Checking hesabından çekilen: " + amount + ". Kalan bakiye: " + balance);
         }
     }
 }

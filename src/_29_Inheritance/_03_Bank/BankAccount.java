@@ -1,12 +1,11 @@
-package _29_Inheritance._03_Example;
+package _29_Inheritance._03_Bank;
 
-// BankAccount sınıfı, tüm banka hesaplarının ortak özelliklerini ve metotlarını temsil eder
+// BankAccount sınıfı, tüm banka hesaplarının ortak özelliklerini ve metotlarını içerir
 public class BankAccount {
-
     protected int accountNumber;
     protected double balance;
 
-    // Yapıcı metot (constructor), hesap numarasını ve bakiyeyi başlatır
+    // Yapıcı metot (constructor)
     public BankAccount(int accountNumber, double balance) {
         this.accountNumber = accountNumber;
         this.balance = balance;
@@ -20,7 +19,11 @@ public class BankAccount {
 
     // Para çekme metodu (alt sınıflarda özelleştirilebilir)
     public void withdraw(double amount) {
-        balance -= amount;
-        System.out.println("Çekilen: " + amount + ". Kalan bakiye: " + balance);
+        if (amount > balance) {
+            System.out.println("Yetersiz bakiye: " + amount + " çekilemez.");
+        } else {
+            balance -= amount;
+            System.out.println("Çekilen: " + amount + ". Kalan bakiye: " + balance);
+        }
     }
 }

@@ -1,5 +1,5 @@
 
-Task:
+Görev:
 Banka Hesap Sistemi
 
 Amaç:
@@ -8,17 +8,15 @@ Bu süreçte, alt sınıfların (subclass) nasıl özelleştirildiğini ve işle
 
 Görev Açıklaması:
 1. `BankAccount` adında bir sınıf oluşturun.
-    Bu sınıf, `accountNumber`, `balance`, `deposit()`, ve `withdraw()` metotlarını içersin.
+   - Bu sınıf, `accountNumber`, `balance`, `deposit()`, ve `withdraw()` metotlarını içermelidir.
 2. `CheckingAccount` ve `SavingsAccount` adında iki alt sınıf oluşturun.
-    Bu sınıflar `BankAccount` sınıfından miras alsın.
-3. `CheckingAccount` sınıfında, para çekme işlemini özelleştirin (override)
-    ve bakiyeden fazla para çekilmesi durumunda uyarı mesajı gösterin.
-4. `BankAccountManager` adında bir sınıf oluşturun.
-    Bu sınıfta hem `CheckingAccount` hem de `SavingsAccount` nesneleri oluşturun ve hesap işlemlerini simüle edin.
+   - Bu sınıflar `BankAccount` sınıfından miras almalıdır.
+3. `CheckingAccount` sınıfında, para çekme işlemini özelleştirin (override).
+   - Bakiyeden fazla para çekilmesi durumunda uyarı mesajı gösterin.
+4. `BankApp` adında bir sınıf oluşturun.
+   - Bu sınıfta hem `CheckingAccount` hem de `SavingsAccount` nesneleri oluşturun ve hesap işlemlerini simüle edin.
 
 İpucu:
 - Üst sınıfta genel para yatırma ve çekme metotlarını tanımlayın.
-  Alt sınıflarda bu metotları özelleştirerek farklı hesap türlerinin davranışlarını belirleyin.
+- Alt sınıflarda bu metotları özelleştirerek farklı hesap türlerinin davranışlarını belirleyin.
 - `CheckingAccount` sınıfında, bakiyeden fazla para çekildiğinde uyarı mesajı gösterebilirsiniz.
-
-
