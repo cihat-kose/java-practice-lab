@@ -1,0 +1,19 @@
+Görev: Şirket ve Departmanlar Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, inheritance kullanarak bir şirketteki farklı departmanların nasıl yapılandırıldığını
+ve her departmanın farklı özelliklere sahip olabileceğini öğrenmektir.
+
+Görev Açıklaması:
+1. "Department" adında bir sınıf oluşturun. Bu sınıf, "name" (departman adı) ve
+   "numberOfEmployees" (çalışan sayısı) gibi özellikler ile "getDepartmentInfo()" metodunu içersin.
+2. "ITDepartment" ve "HRDepartment" adında iki alt sınıf oluşturun. Bu sınıflar "Department" sınıfından miras alsın.
+3. "ITDepartment" sınıfında, "getDepartmentInfo()" metodunu özelleştirerek IT departmanının bilgilerini ekrana yazdırın.
+   Aynı şekilde, "HRDepartment" sınıfında da bu metodu özelleştirin.
+4. "CompanyManager" adında bir sınıf oluşturun.
+   Bu sınıfta hem "ITDepartment" hem de "HRDepartment" nesneleri oluşturup, departman bilgilerini ekrana yazdırın.
+
+İpucu:
+- Her departman kendine özgü bilgileri içerebilir.
+  Alt sınıflarda bu bilgileri "getDepartmentInfo()" metodunu özelleştirerek ifade edebilirsiniz.
+- IT ve HR departmanlarının işleyişleri farklı olduğundan, her bir sınıf kendi bilgilerini ekrana yazdırmalıdır.

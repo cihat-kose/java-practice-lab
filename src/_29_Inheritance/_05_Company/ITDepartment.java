@@ -1,11 +1,11 @@
-package _29_Inheritance._05_Example;
+package _29_Inheritance._05_Company;
 
 // ITDepartment sınıfı, Department sınıfından miras alır
 public class ITDepartment extends Department {
 
-    // Yapıcı metot (constructor), üst sınıftaki yapıcı metodu çağırır
+    // Yapıcı metot (constructor)
     public ITDepartment(String name, int numberOfEmployees) {
-        super(name, numberOfEmployees); // Üst sınıftaki name ve numberOfEmployees özelliklerini başlatır
+        super(name, numberOfEmployees);
     }
 
     // IT departmanı için departman bilgisi metodunu özelleştiriyoruz (override)

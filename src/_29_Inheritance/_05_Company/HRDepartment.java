@@ -1,11 +1,11 @@
-package _29_Inheritance._05_Example;
+package _29_Inheritance._05_Company;
 
 // HRDepartment sınıfı, Department sınıfından miras alır
 public class HRDepartment extends Department {
 
-    // Yapıcı metot (constructor), üst sınıftaki yapıcı metodu çağırır
+    // Yapıcı metot (constructor)
     public HRDepartment(String name, int numberOfEmployees) {
-        super(name, numberOfEmployees); // Üst sınıftaki name ve numberOfEmployees özelliklerini başlatır
+        super(name, numberOfEmployees);
     }
 
     // HR departmanı için departman bilgisi metodunu özelleştiriyoruz (override)

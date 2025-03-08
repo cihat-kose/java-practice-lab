@@ -1,4 +1,4 @@
-package _29_Inheritance._05_Example;
+package _29_Inheritance._05_Company;
 
 public class CompanyManager {
     public static void main(String[] args) {
