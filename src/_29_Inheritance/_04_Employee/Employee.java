@@ -1,24 +1,22 @@
-package _29_Inheritance._04_Example;
+package _29_Inheritance._04_Employee;
 
 // Employee sınıfı, tüm çalışanların ortak özelliklerini ve metotlarını temsil eder
 public class Employee {
-
-    // Çalışanların ortak özellikleri: isim ve maaş
     protected String name;
     protected double salary;
 
-    // Yapıcı metot (constructor), name ve salary özelliklerini başlatır
+    // Constructor (Yapıcı metot)
     public Employee(String name, double salary) {
         this.name = name;
         this.salary = salary;
     }
 
-    // Ortak bir iş yapma metodu (alt sınıflar bu metodu özelleştirebilir)
+    // Ortak iş yapma metodu (alt sınıflar tarafından özelleştirilebilir)
     public void work() {
         System.out.println(name + " çalışıyor.");
     }
 
-    // Maaş bilgisi
+    // Maaş bilgisini ekrana yazdıran metot
     public void displaySalary() {
         System.out.println(name + " maaşı: " + salary);
     }

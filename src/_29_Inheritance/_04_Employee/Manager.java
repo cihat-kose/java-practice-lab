@@ -1,11 +1,11 @@
-package _29_Inheritance._04_Example;
+package _29_Inheritance._04_Employee;
 
 // Manager sınıfı, Employee sınıfından miras alır
 public class Manager extends Employee {
 
-    // Yapıcı metot (constructor), üst sınıftaki yapıcı metodu çağırır
+    // Constructor (Yapıcı metot)
     public Manager(String name, double salary) {
-        super(name, salary); // Üst sınıftaki name ve salary özelliklerini başlatır
+        super(name, salary);
     }
 
     // Manager sınıfı, work metodunu özelleştirir (override)
