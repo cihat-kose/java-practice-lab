@@ -1,0 +1,15 @@
+Görev: Şekillerin Alan Hesabı
+
+Amaç:
+Bu görevin amacı, polymorphism kullanarak farklı şekillerin alanlarını hesaplamaktır.
+
+Gereksinimler:
+1. Shape adında bir sınıf oluşturun. Bu sınıf, calculateArea() adında bir metot içermelidir.
+2. Circle ve Rectangle adında iki alt sınıf oluşturun.  
+   - Bu sınıflar Shape sınıfından miras almalı ve calculateArea() metodunu override etmelidir.
+3. ShapeManager sınıfında hem Circle hem de Rectangle nesneleri oluşturulmalı ve calculateArea() metodu çağrılmalıdır.
+
+İpuçları:
+- Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesnelerini yönetin.
+- Circle sınıfında alanı hesaplamak için π * r^2 formülü kullanılmalıdır.
+- Rectangle sınıfında alanı hesaplamak için uzunluk * genişlik formülü kullanılmalıdır.

@@ -1,4 +1,4 @@
-package _30_Polymorphism._02_Example;
+package _30_Polymorphism._02_Shape;
 
 // Circle sınıfı, Shape sınıfından miras alır
 public class Circle extends Shape {
@@ -10,7 +10,7 @@ public class Circle extends Shape {
         this.radius = radius;
     }
 
-    // Circle sınıfı, calculateArea metodunu özelleştirir (override)
+    // Circle sınıfı, calculateArea metodunu override eder
     @Override
     public void calculateArea() {
         double area = Math.PI * radius * radius;

@@ -1,4 +1,4 @@
-package _30_Polymorphism._02_Example;
+package _30_Polymorphism._02_Shape;
 
 // Rectangle sınıfı, Shape sınıfından miras alır
 public class Rectangle extends Shape {
@@ -12,7 +12,7 @@ public class Rectangle extends Shape {
         this.width = width;
     }
 
-    // Rectangle sınıfı, calculateArea metodunu özelleştirir (override)
+    // Rectangle sınıfı, calculateArea metodunu override eder
     @Override
     public void calculateArea() {
         double area = length * width;
