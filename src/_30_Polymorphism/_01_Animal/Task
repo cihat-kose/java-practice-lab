@@ -1,0 +1,17 @@
+Görev: Basit Hayvanlar Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, polymorphism kavramını basit bir hayvan hiyerarşisi üzerinden öğrenmektir.
+
+Görev Açıklaması:
+1. `Animal` adında bir üst sınıf oluşturun. Bu sınıf, `makeSound()` adında bir metot içermelidir.
+2. `Dog` ve `Cat` adında iki alt sınıf oluşturun.
+   - Bu sınıflar `Animal` sınıfından miras almalı ve `makeSound()` metodunu özelleştirmelidir (override).
+3. `AnimalApp` adında bir sınıf oluşturun.
+   - Bu sınıfta hem `Dog` hem de `Cat` nesneleri oluşturulmalı ve `makeSound()` metodu çağrılmalıdır.
+4. Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesneleri oluşturun ve `makeSound()` metodunu çağırın.
+
+İpuçları:
+- Polymorphism ile alt sınıf nesnelerini oluşturup üst sınıf referansı kullanarak `makeSound()` metodunu çalıştırın.
+- `@Override` anotasyonunu kullanarak metotları doğru şekilde ezdiğinizden emin olun.
+- Her hayvan türü kendi sesini çıkarmalıdır.

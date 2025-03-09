@@ -1,6 +1,6 @@
-package _30_Polymorphism._01_Example;
+package _30_Polymorphism._01_Animal;
 
-public class AnimalManager {
+public class AnimalApp {
     public static void main(String[] args) {
         // Polymorphism ile üst sınıf referansı kullanarak alt sınıf nesneleri oluşturma
         Animal myDog = new Dog();

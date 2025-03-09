@@ -1,4 +1,4 @@
-package _30_Polymorphism._01_Example;
+package _30_Polymorphism._01_Animal;
 
 // Cat sınıfı, Animal sınıfından miras alır
 public class Cat extends Animal {
