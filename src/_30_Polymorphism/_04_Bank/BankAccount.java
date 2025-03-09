@@ -1,4 +1,4 @@
-package _30_Polymorphism._04_Example;
+package _30_Polymorphism._04_Bank;
 
 // Üst sınıf: BankAccount
 public class BankAccount {
