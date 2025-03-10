@@ -1,6 +1,6 @@
-package _30_Polymorphism._03_Example;
+package _30_Polymorphism._03_Employee;
 
-public class EmployeeManager {
+public class EmployeeApp {
     public static void main(String[] args) {
         // Polymorphism ile üst sınıf referansı kullanarak alt sınıf nesneleri oluşturma
         Employee manager = new Manager();

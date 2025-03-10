@@ -1,4 +1,4 @@
-package _30_Polymorphism._03_Example;
+package _30_Polymorphism._03_Employee;
 
 // Manager sınıfı, Employee sınıfından miras alır
 public class Manager extends Employee {

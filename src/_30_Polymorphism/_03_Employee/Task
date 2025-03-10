@@ -1,0 +1,14 @@
+Görev: Çalışanlar Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, polymorphism kullanarak farklı çalışan türlerinin iş yapma biçimlerini göstermektir.
+
+Görev Açıklaması:
+1. "Employee" adında bir üst sınıf oluşturun. Bu sınıf, "work()" adında bir metot içersin.
+2. "Manager" ve "Developer" adında iki alt sınıf oluşturun.
+   - Bu sınıflar "Employee" sınıfından miras alsın ve "work()" metodunu kendi iş tanımlarına uygun şekilde ezsin (override).
+3. "EmployeeApp" sınıfında hem "Manager" hem de "Developer" nesneleri oluşturup, "work()" metodunu çalıştırın.
+
+İpucu:
+- Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesneleri oluşturun.
+- "work()" metodu her çalışan türü için farklı bir çıktı üretsin.
