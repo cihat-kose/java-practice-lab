@@ -1,9 +1,9 @@
-package _30_Polymorphism._05_Example;
+package _30_Polymorphism._05_Car;
 
 // Üst sınıf: Vehicle
 public class Vehicle {
 
-    // Motor çalıştırma metodu (alt sınıflar özelleştirebilir)
+    // Motor çalıştırma metodu (Alt sınıflar tarafından özelleştirilebilir)
     public void startEngine() {
         System.out.println("Araç motoru çalışıyor.");
     }

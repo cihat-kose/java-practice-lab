@@ -1,0 +1,14 @@
+Görev: Araçlar Hiyerarşisi
+
+Amaç:
+Bu görevin amacı, polymorphism kullanarak farklı araç türlerinin motor çalışma davranışlarını modellemektir.
+
+Görev Açıklaması:
+1. "Vehicle" adında bir üst sınıf oluşturun. Bu sınıf, "startEngine()" ve "stopEngine()" metotlarını içersin.
+2. "Car" ve "Motorcycle" adında iki alt sınıf oluşturun.
+   - Bu sınıflar "Vehicle" sınıfından miras alsın ve "startEngine()" metodunu kendi motor seslerine uygun şekilde ezsin (override).
+3. "VehicleApp" sınıfında hem "Car" hem de "Motorcycle" nesneleri oluşturup, motor çalışma davranışlarını simüle edin.
+
+İpucu:
+- Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesneleri oluşturun.
+- "startEngine()" metodu her araç türü için farklı bir çıktı üretsin.

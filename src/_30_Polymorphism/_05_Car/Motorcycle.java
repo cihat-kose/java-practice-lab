@@ -1,4 +1,4 @@
-package _30_Polymorphism._05_Example;
+package _30_Polymorphism._05_Car;
 
 // Motorcycle sınıfı, Vehicle sınıfından miras alır
 public class Motorcycle extends Vehicle {
