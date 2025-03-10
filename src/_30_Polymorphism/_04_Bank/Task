@@ -1,0 +1,15 @@
+Görev: Banka Hesap Yönetimi
+
+Amaç:
+Bu görevin amacı, polymorphism kullanarak farklı hesap türlerinin işlem kurallarını göstermektir.
+
+Görev Açıklaması:
+1. "BankAccount" adında bir üst sınıf oluşturun. Bu sınıf, "withdraw()" ve "deposit()" metotlarını içermelidir.
+2. "CheckingAccount" ve "SavingsAccount" adında iki alt sınıf oluşturun.
+   - Bu sınıflar "BankAccount" sınıfından miras almalı ve "withdraw()" metodunu kendi işlem kurallarına uygun şekilde ezmelidir (override).
+3. "BankApp" sınıfında hem "CheckingAccount" hem de "SavingsAccount" nesneleri oluşturulmalı ve hesap işlemleri simüle edilmelidir.
+
+İpucu:
+- Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesneleri oluşturun.
+- "SavingsAccount" sınıfına ek bir özellik olarak faiz ekleme metodu tanımlayın.
+- "withdraw()" metodu her hesap türü için farklı işlem kuralları uygulamalıdır.

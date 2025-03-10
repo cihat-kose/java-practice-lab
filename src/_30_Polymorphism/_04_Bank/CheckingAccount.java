@@ -1,4 +1,4 @@
-package _30_Polymorphism._04_Example;
+package _30_Polymorphism._04_Bank;
 
 // CheckingAccount sınıfı, BankAccount sınıfından miras alır
 public class CheckingAccount extends BankAccount {

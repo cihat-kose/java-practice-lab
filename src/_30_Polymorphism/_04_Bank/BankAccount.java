@@ -5,12 +5,12 @@ public class BankAccount {
 
     protected double balance;
 
-    // Yapıcı metot
+    // Yapıcı metot (constructor)
     public BankAccount(double balance) {
         this.balance = balance;
     }
 
-    // Para çekme metodu (alt sınıflar özelleştirebilir)
+    // Para çekme metodu (Alt sınıflar tarafından özelleştirilebilir)
     public void withdraw(double amount) {
         balance -= amount;
         System.out.println("Çekilen: " + amount + ". Kalan bakiye: " + balance);

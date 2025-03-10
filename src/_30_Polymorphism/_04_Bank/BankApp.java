@@ -1,6 +1,6 @@
-package _30_Polymorphism._04_Example;
+package _30_Polymorphism._04_Bank;
 
-public class BankAccountManager {
+public class BankApp {
     public static void main(String[] args) {
         // CheckingAccount ve SavingsAccount nesneleri oluşturuluyor
         BankAccount checkingAccount = new CheckingAccount(1500.0);

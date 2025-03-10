@@ -1,4 +1,4 @@
-package _30_Polymorphism._04_Example;
+package _30_Polymorphism._04_Bank;
 
 // SavingsAccount sınıfı, BankAccount sınıfından miras alır
 public class SavingsAccount extends BankAccount {
@@ -8,7 +8,7 @@ public class SavingsAccount extends BankAccount {
         super(balance);
     }
 
-    // SavingsAccount'ta ek bir özellik olarak faiz eklenebilir
+    // SavingsAccount'a özel bir faiz ekleme metodu
     public void addInterest(double rate) {
         double interest = balance * rate / 100;
         balance += interest;
