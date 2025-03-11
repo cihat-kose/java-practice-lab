@@ -1,4 +1,4 @@
-package _31_Interface._05_Example;
+package _31_Interface._05_Payment;
 
 public class PayPalPayment implements IPayment {
     @Override

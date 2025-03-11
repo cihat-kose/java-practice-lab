@@ -1,4 +1,4 @@
-package _31_Interface._05_Example;
+package _31_Interface._05_Payment;
 
 public class CreditCardPayment implements IPayment {
     @Override
@@ -6,4 +6,3 @@ public class CreditCardPayment implements IPayment {
         System.out.println("Paid " + amount + " using Credit Card."); // Kredi kartıyla ödeme
     }
 }
-
