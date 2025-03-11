@@ -1,0 +1,19 @@
+Görev: Interface ile Çoklu Kalıtım
+
+Amaç:
+Bu görevde, interface kullanarak çoklu kalıtımı nasıl gerçekleştirebileceğimizi
+ve bu sayede şekil hesaplamalarını öğrenmeyi hedefliyoruz.
+
+Görev Açıklaması:
+1. "IShape" adında bir interface oluşturun ve "calculateArea()" ve "calculatePerimeter()" metotlarını tanımlayın.
+2. "Rectangle" ve "Circle" adında iki sınıf oluşturun. Bu sınıflar "IShape" interface’ini implements etsin.
+3. "Rectangle" ve "Circle" sınıflarında bu metotları kendi şekil özelliklerine göre tanımlayın
+   ve ekrana alan ve çevre hesaplamalarını yazdırın.
+4. "ShapeApp" sınıfında hem "Rectangle" hem de "Circle" nesneleri oluşturup, alan ve çevre hesaplamalarını test edin.
+
+İpucu:
+- Farklı sınıflar aynı interface’i implement ederek kendi özel hesaplamalarını gerçekleştirebilir.
+- "Circle" sınıfında alanı "π * r^2";
+   çevreyi "2 * π * r" formülüyle hesaplayabilirsiniz.
+- "Rectangle" sınıfında ise alanı "uzunluk * genişlik";
+   çevreyi "2 * (uzunluk + genişlik)" formülüyle hesaplayabilirsiniz.

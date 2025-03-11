@@ -1,8 +1,9 @@
-package _31_Interface._03_Example;
+package _31_Interface._03_Shapes;
 
 public class Circle implements IShape {
     private double radius;
 
+    // Constructor
     public Circle(double radius) {
         this.radius = radius;
     }
