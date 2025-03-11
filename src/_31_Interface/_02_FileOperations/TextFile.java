@@ -1,6 +1,7 @@
-package _31_Interface._02_Example;
+package _31_Interface._02_FileOperations;
 
 public class TextFile implements IReadable, IWritable {
+
     @Override
     public void read() {
         System.out.println("Reading the text file."); // Read metodunun özelleştirilmesi
