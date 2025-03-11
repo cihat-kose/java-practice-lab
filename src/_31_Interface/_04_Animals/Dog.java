@@ -1,4 +1,4 @@
-package _31_Interface._04_Example;
+package _31_Interface._04_Animals;
 
 public class Dog implements IAnimal {
     @Override
@@ -6,4 +6,3 @@ public class Dog implements IAnimal {
         System.out.println("Woof!"); // Köpeğin sesi
     }
 }
-

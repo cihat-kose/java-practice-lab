@@ -1,4 +1,4 @@
-package _31_Interface._04_Example;
+package _31_Interface._04_Animals;
 
 public class Cat implements IAnimal {
     @Override
@@ -6,4 +6,3 @@ public class Cat implements IAnimal {
         System.out.println("Meow!"); // Kedinin sesi
     }
 }
-

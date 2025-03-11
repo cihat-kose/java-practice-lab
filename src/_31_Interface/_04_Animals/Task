@@ -1,0 +1,16 @@
+Görev: Interface ile Polimorfizm
+
+Amaç:
+Bu görevde, interface kullanarak polimorfizmin nasıl sağlanabileceğini ve
+farklı sınıfların aynı metodu nasıl kendi biçimlerine göre uygulayabileceğini öğreneceğiz.
+
+Görev Açıklaması:
+1. "IAnimal" adında bir interface oluşturun ve "makeSound()" metodunu tanımlayın.
+2. "Dog", "Cat" ve "Bird" adında üç sınıf oluşturun. Bu sınıflar "IAnimal" interface’ini implements etsin.
+3. Her sınıfta "makeSound()" metodunu kendi seslerine göre özelleştirin.
+4. "AnimalApp" adında bir sınıf oluşturun ve bir liste içinde farklı hayvan nesnelerini tutarak
+   her birinin sesini sırayla oynatın.
+
+İpucu:
+- Polimorfizm ile aynı metodu farklı nesnelerde farklı şekilde kullanabiliriz.
+- Hayvan sınıfları "makeSound()" metodunu kendi sesleriyle özelleştirmelidir.
