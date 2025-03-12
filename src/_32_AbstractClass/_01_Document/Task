@@ -1,0 +1,16 @@
+Görev:
+Abstract Class Kullanımı
+
+Amaç:
+Bu görevde, abstract class’ın temel kullanımını öğreneceğiz.
+Bir abstract class tanımlayarak onu başka bir sınıfta nasıl genişletebileceğimizi göreceğiz.
+
+Görev Açıklaması:
+1. `DocumentBase` adında bir abstract class oluşturun.
+   - Bu class içinde `print()` adında bir soyut (abstract) metot tanımlayın.
+2. `Document` adında bir sınıf oluşturun.
+   - Bu sınıf `DocumentBase` abstract class’ını extend etsin.
+   - `print()` metodunu özelleştirerek ekrana bir mesaj yazdırsın.
+
+İpucu:
+- Abstract class içinde hem soyut hem de somut metotlar bulunabilir.

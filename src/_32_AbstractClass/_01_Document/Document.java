@@ -1,4 +1,4 @@
-package _32_AbstractClass._01_Example;
+package _32_AbstractClass._01_Document;
 
 public class Document extends DocumentBase {
     @Override
