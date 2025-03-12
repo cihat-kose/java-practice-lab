@@ -1,0 +1,27 @@
+Görev: Genel Konu Tekrarı
+
+Amaç:
+Bu görevde, Java'da öğrendiğimiz ilk 10 konunun genel tekrarını yapacağız.
+Bir program yazarak, bu konuların nasıl kullanıldığını tekrar edeceğiz.
+
+Gereksinimler:
+1. Kullanıcıdan ad, yaş ve kilo bilgisi alınmalıdır.
+2. Alınan bilgiler aşağıdaki işlemlerle işlenmelidir:
+   - Ad büyük harfe çevrilmelidir.
+   - Yaşa göre doğum yılı hesaplanmalıdır.
+   - Kilo bilgisi tam sayıya çevrilmelidir.
+3. Kullanıcının yetişkin olup olmadığı if-else veya ternary operatörü ile kontrol edilmelidir.
+4. Kilo bilgisine göre bir değerlendirme switch-case yapısı ile yapılmalıdır.
+5. Tüm bilgiler ekrana düzenli şekilde yazdırılmalıdır.
+
+Kapsanan Konular:
+- Print ve Println
+- Escape Sequences
+- Değişkenler ve Veri Tipleri
+- Type Casting
+- Scanner Kullanımı
+- String Metotları
+- Aritmetik Operatörler
+- If-Else Yapıları
+- Ternary Operator
+- Switch-Case Kullanımı
