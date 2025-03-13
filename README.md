@@ -71,6 +71,7 @@ The project is organized into the following modules, each focusing on a specific
 - **_08_ArithmeticOperators**: Usage of arithmetic operators in Java.
 - **_09_IfElseStatements**: Conditional logic using if-else statements.
 - **_10_TernaryOperator**: Usage of the ternary operator.
+- **_11_RecapExample**: Recap example covering first 10 topics.
 - **_12_SwitchCase**: Understanding and using the switch-case statement.
 - **_13_NestedIfElse**: Working with nested if-else statements.
 - **_14_ForLoop**: Exercises on using the for loop.
