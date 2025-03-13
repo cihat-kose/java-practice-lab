@@ -2,8 +2,8 @@
 
 ![Java](https://img.shields.io/badge/Java-ED8B00?style=for-the-badge&logo=java&logoColor=white)
 ![Platform](https://img.shields.io/badge/platform-JVM-blue?style=for-the-badge)
-![GitHub](https://img.shields.io/github/license/ChatGTHB/JavaPatikaProjects?style=for-the-badge)
-![GitHub last commit](https://img.shields.io/github/last-commit/ChatGTHB/JavaPatikaProjects?style=for-the-badge)
+![GitHub](https://img.shields.io/github/license/cihat-kose/java-practice-lab?style=for-the-badge)
+![GitHub last commit](https://img.shields.io/github/last-commit/cihat-kose/java-practice-lab?style=for-the-badge)
 
 ## 💡 Introduction
 Welcome to the Java Practice Lab repository! This project is designed to provide a comprehensive set of exercises to strengthen your core Java skills. Whether you're a beginner or looking to solidify your understanding, these exercises will guide you through fundamental and advanced Java topics.
