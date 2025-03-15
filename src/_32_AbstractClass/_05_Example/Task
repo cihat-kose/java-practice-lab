@@ -1,5 +1,4 @@
-
-Task:
+Görev:
 Gerçek Hayattan Bir Senaryo - Ödeme Sistemi
 
 Amaç:
@@ -7,11 +6,16 @@ Bu görevde, abstract class kullanarak farklı ödeme yöntemlerinin nasıl birl
 ve bunların nasıl yönetilebileceğini öğrenmeyi amaçlıyoruz.
 
 Görev Açıklaması:
-1. `PaymentBase` adında bir abstract class oluşturun ve `pay()` adında bir soyut metot tanımlayın.
+1. `PaymentBase` adında bir abstract class oluşturun.
+   - `pay(double amount)` adında bir soyut metot tanımlayın.
 2. `CreditCardPayment`, `PayPalPayment` ve `BitcoinPayment` adında üç sınıf oluşturun.
-    Bu sınıflar `PaymentBase` abstract class’ını extend etsin.
-3. Her sınıfta `pay()` metodunu kendine özgü ödeme mesajlarıyla tanımlayın.
-4. `PaymentProcessor` adında bir sınıf oluşturun ve farklı ödeme tiplerini kabul eden bir metot yazın.
+   - Bu sınıflar `PaymentBase` abstract class’ını extend etsin.
+   - `pay(double amount)` metodunu, her ödeme yöntemi için özelleştirilmiş bir mesaj ile override edin.
+3. `PaymentProcessor` adında bir sınıf oluşturun.
+   - Farklı ödeme tiplerini kabul eden `processPayment(PaymentBase payment, double amount)` adlı bir metot yazın.
+   - Bu metot, ödeme işlemini gerçekleştirerek ekrana ilgili mesajı yazdırsın.
+4. `main` metodunda farklı ödeme türlerinden nesneler oluşturun ve bunları `processPayment` metodu ile çalıştırın.
 
 İpucu:
 - Abstract class kullanarak çeşitli ödeme yöntemlerini tek bir yerde yönetebilirsiniz.
+- `processPayment` metodu, polimorfizm kullanarak tüm ödeme türlerini işleyebilmelidir.
