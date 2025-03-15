@@ -1,0 +1,20 @@
+Görev:
+Abstract Class ile Polimorfizm Kullanımı
+
+Amaç:
+Bu görevde, abstract class kullanarak polimorfizmin nasıl sağlanabileceğini ve
+farklı sınıfların aynı metodu nasıl kendi biçimlerine göre uygulayabileceğini öğreneceğiz.
+
+Görev Açıklaması:
+1. `AnimalBase` adında bir abstract class oluşturun.
+   - Bu class içinde `makeSound()` adında bir soyut metot tanımlayın.
+2. `Dog`, `Cat` ve `Bird` adında üç sınıf oluşturun.
+   - Bu sınıflar `AnimalBase` abstract class’ını extend etsin.
+   - `makeSound()` metodunu her hayvanın çıkardığı sese uygun şekilde override edin.
+3. `AnimalSoundPlayer` adında bir sınıf oluşturun.
+   - `main` metodu içinde bir liste oluşturun ve içine farklı hayvan nesneleri ekleyin.
+   - Polimorfizm kullanarak listedeki her hayvanın `makeSound()` metodunu çağırın.
+
+İpucu:
+- Polimorfizm ile aynı metodu farklı nesnelerde farklı şekilde kullanabiliriz.
+- `ArrayList` kullanarak farklı nesneleri tek bir koleksiyon içinde saklayabiliriz.

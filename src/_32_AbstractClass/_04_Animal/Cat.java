@@ -1,4 +1,4 @@
-package _32_AbstractClass._04_Example;
+package _32_AbstractClass._04_Animal;
 
 public class Cat extends AnimalBase {
     @Override
@@ -6,4 +6,3 @@ public class Cat extends AnimalBase {
         System.out.println("Meow!"); // Kedinin sesi
     }
 }
-
