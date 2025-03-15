@@ -1,0 +1,20 @@
+Görev:
+Birden Fazla Soyut Metot Kullanımı
+
+Amaç:
+Bu görevde, bir abstract class içinde birden fazla soyut metot tanımlayıp,
+alt sınıfların bu metotları nasıl implemente edebileceğini öğrenmek amaçlanmaktadır.
+
+Görev Açıklaması:
+1. `TextFileBase` adında bir abstract class oluşturun.
+   - Bu class içinde `read()` ve `write()` adında iki soyut metot tanımlayın.
+2. `TextFile` adında bir sınıf oluşturun.
+   - Bu sınıf `TextFileBase` abstract class’ını extend etsin.
+   - `read()` ve `write()` metotlarını override ederek ekrana uygun mesajlar yazdırın.
+3. `TextFileApp` adında bir sınıf oluşturun.
+   - `main` metodu içinde `TextFile` sınıfından bir nesne oluşturun.
+   - `read()` ve `write()` metotlarını çağırarak çıktıları görüntüleyin.
+
+İpucu:
+- Abstract class’lar hem soyut hem de somut metotlar içerebilir.
+- Alt sınıflar, abstract class içinde tanımlanan soyut metotları override etmek zorundadır.
