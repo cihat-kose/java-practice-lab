@@ -1,0 +1,22 @@
+Görev:
+Farklı şekillerin alan ve çevresini hesaplayan bir sistem oluşturun.
+
+Amaç:
+Bu görevde, bir abstract class içinde birden fazla soyut metot tanımlayarak, alt sınıfların bu metotları nasıl implemente edebileceğini öğrenmek amaçlanmaktadır.
+
+Görev Açıklaması:
+1. `ShapeBase` adında bir abstract class oluşturun.
+   - Bu class içinde `calculateArea()` ve `calculatePerimeter()` adında iki soyut metot tanımlayın.
+2. `Rectangle` adında bir sınıf oluşturun.
+   - `ShapeBase` sınıfını extend etsin.
+   - `calculateArea()` ve `calculatePerimeter()` metotlarını override ederek dikdörtgenin alan ve çevresini hesaplayın.
+3. `Circle` adında bir sınıf oluşturun.
+   - `ShapeBase` sınıfını extend etsin.
+   - `calculateArea()` ve `calculatePerimeter()` metotlarını override ederek dairenin alan ve çevresini hesaplayın.
+4. `ShapeManager` adında bir sınıf oluşturun.
+   - `main` metodu içinde `Rectangle` ve `Circle` sınıflarından nesneler oluşturun.
+   - `calculateArea()` ve `calculatePerimeter()` metotlarını çağırarak çıktıları görüntüleyin.
+
+İpucu:
+- Abstract class’lar hem soyut hem de somut metotlar içerebilir.
+- Alt sınıflar, abstract class içinde tanımlanan soyut metotları override etmek zorundadır.

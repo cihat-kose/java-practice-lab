@@ -1,4 +1,4 @@
-package _32_AbstractClass._03_Example;
+package _32_AbstractClass._03_Shape;
 
 public class Rectangle extends ShapeBase {
     private double width;

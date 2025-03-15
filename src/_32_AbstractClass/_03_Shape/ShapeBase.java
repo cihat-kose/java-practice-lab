@@ -1,7 +1,7 @@
-package _32_AbstractClass._03_Example;
+package _32_AbstractClass._03_Shape;
 
 public abstract class ShapeBase {
-    // Soyut metotlar, alt sınıflar tarafından implement edilmelidir.
+    // Soyut metotlar, alt sınıflar tarafından implemente edilmelidir.
     public abstract double calculateArea();
     public abstract double calculatePerimeter();
 }
