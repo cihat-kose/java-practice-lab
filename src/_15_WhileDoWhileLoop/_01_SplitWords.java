@@ -15,29 +15,37 @@ import java.util.Scanner;
 */
 
 public class _01_SplitWords {
-
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
+        // Kullanıcıdan cümle girişi
         System.out.print("Lütfen bir cümle giriniz: ");
-        String cumle = scanner.nextLine().trim(); // Baş ve sondaki boşluklar kaldırıldı.
+        String cumle = scanner.nextLine().trim(); // Baş ve sondaki boşlukları kaldır
 
-        String kelime = "";
+        String kelime = ""; // Geçici kelime tutucu
         int i = 0;
 
+        // While döngüsü ile tüm karakterleri gez
         while (i < cumle.length()) {
             char karakter = cumle.charAt(i);
 
+            // Boşluk değilse kelimeye ekle
             if (karakter != ' ') {
                 kelime += karakter;
             } else {
-                System.out.println(kelime);
-                kelime = "";
+                // Boşluk varsa o ana kadar biriken kelimeyi yazdır ve sıfırla
+                if (!kelime.isEmpty()) {
+                    System.out.println(kelime);
+                    kelime = "";
+                }
             }
             i++;
         }
 
-        System.out.println(kelime); // Son kelimeyi yazdırır.
+        // Döngü bittikten sonra son kelimeyi yazdır
+        if (!kelime.isEmpty()) {
+            System.out.println(kelime);
+        }
 
         scanner.close();
     }
