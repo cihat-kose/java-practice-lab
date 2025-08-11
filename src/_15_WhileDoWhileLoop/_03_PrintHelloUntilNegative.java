@@ -23,13 +23,14 @@ public class _03_PrintHelloUntilNegative {
         int sayi;
 
         do {
-            System.out.print("Bir sayı giriniz (Negatif sayı girilince program sonlanır): ");
+            System.out.print("Bir sayı giriniz (negatif sayı girildiğinde çıkılır): ");
             sayi = input.nextInt();
 
+            // Eğer sayı pozitif veya sıfırsa
             if (sayi >= 0) {
                 System.out.println("Merhaba!");
             }
-        } while (sayi >= 0);
+        } while (sayi >= 0); // Negatif girilirse döngü biter
 
         System.out.println("Program sonlandı.");
         input.close();
