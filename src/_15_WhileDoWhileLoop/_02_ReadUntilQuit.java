@@ -20,17 +20,22 @@ public class _02_ReadUntilQuit {
     public static void main(String[] args) {
         Scanner input = new Scanner(System.in);
 
-        System.out.println("Metin giriniz (çıkmak için 'quit' yazın): ");
-        String giris = input.nextLine();
+        String giris;
 
-        while (!giris.equalsIgnoreCase("quit")) {
-            System.out.println("Girilen metin: " + giris);
-            System.out.println("Metin giriniz (çıkmak için 'quit' yazın): ");
+        while (true) {
+            System.out.print("Metin giriniz (çıkmak için 'quit' yazın): ");
             giris = input.nextLine();
+
+            // Çıkış kontrolü
+            if (giris.equalsIgnoreCase("quit")) {
+                System.out.println("Program sonlandırıldı.");
+                break;
+            }
+
+            // Girilen metni ekrana yazdır
+            System.out.println("Girilen metin: " + giris);
         }
 
-        System.out.println("Program sonlandırıldı.");
         input.close();
     }
 }
-
