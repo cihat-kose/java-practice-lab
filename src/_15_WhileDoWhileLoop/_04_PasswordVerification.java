@@ -29,30 +29,35 @@ public class _04_PasswordVerification {
 
         System.out.print("Yeni şifrenizi oluşturunuz: ");
         String sifre = scanner.nextLine();
-        int i = 1;
 
-        // Şifre doğrulama döngüsü
-        while (true) {
+        // Şifre doğrulama kısmı
+        int hakSayisi = 0;
+        boolean sifreOnaylandi = false;
+
+        while (hakSayisi < 3) {
             System.out.print("Şifrenizi tekrar girin: ");
             String sifreTekrar = scanner.nextLine();
 
             if (sifre.equals(sifreTekrar)) {
                 System.out.println("TAMAM");
-                break;
+                sifreOnaylandi = true;
+                break; // Doğru girildiyse çık
             } else {
                 System.out.println("HATALI ŞİFRE TEKRAR DENEYİNİZ");
-                if (i == 3) {
-                    System.out.println("3 kez hatalı giriş yapıldı. Program sonlandırılıyor.");
-                    scanner.close();
-                    return;
-                }
-                i++;
+                hakSayisi++;
             }
         }
 
-        int sayac = 0;
-        // Kullanıcı giriş döngüsü
-        while (sayac < 3) {
+        // Şifre hiç doğrulanmadıysa programı bitir
+        if (!sifreOnaylandi) {
+            System.out.println("3 kez hatalı giriş yapıldı. Program sonlandırılıyor.");
+            scanner.close();
+            return;
+        }
+
+        // Login aşaması
+        hakSayisi = 0;
+        while (hakSayisi < 3) {
             System.out.print("Login Password: ");
             String sifreLogin = scanner.nextLine();
 
@@ -61,12 +66,13 @@ public class _04_PasswordVerification {
                 break;
             } else {
                 System.out.println("ŞİFRE HATALI");
+                hakSayisi++;
             }
+        }
 
-            if (sayac == 2) {
-                System.out.println("Üç kez yanlış giriş yapıldı. Program sonlandırılıyor.");
-            }
-            sayac++;
+        // 3 deneme hakkı bitmişse
+        if (hakSayisi == 3) {
+            System.out.println("Üç kez yanlış giriş yapıldı. Program sonlandırılıyor.");
         }
 
         scanner.close();
