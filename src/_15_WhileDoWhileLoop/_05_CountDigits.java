@@ -18,6 +18,14 @@ public class _05_CountDigits {
         System.out.print("Sayı giriniz: ");
         int sayi = scanner.nextInt();
 
+        sayi = Math.abs(sayi); // Negatif sayılar için mutlak değer alınır.
+
+        // 0 özel durum: tek basamak
+        if (sayi == 0) {
+            System.out.println("Basamak sayısı: 1");
+            return;
+        }
+
         int sayac = 0;
 
         while (sayi > 0) {
