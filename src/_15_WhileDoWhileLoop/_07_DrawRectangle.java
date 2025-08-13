@@ -3,20 +3,20 @@ package _15_WhileDoWhileLoop;
 import java.util.Scanner;
 
 /**
-   Görev:
-   Kullanıcının belirlediği genişlik ve uzunluktaki dikdörtgeni,
-   verilen bir karakterle oluşturan bir Java programı yazınız.
+ Görev:
+ Kullanıcının belirlediği genişlik ve uzunluktaki dikdörtgeni,
+ verilen bir karakterle oluşturan bir Java programı yazınız.
 
-   Örnek:
-   Bir karakter giriniz: *
-   Genişlik giriniz: 5
-   Uzunluk giriniz: 3
+ Örnek:
+ Bir karakter giriniz: *
+ Genişlik giriniz: 5
+ Uzunluk giriniz: 3
 
-   Çıktı:
-   *****
-   *****
-   *****
-*/
+ Çıktı:
+ *****
+ *****
+ *****
+ */
 
 public class _07_DrawRectangle {
     public static void main(String[] args) {
