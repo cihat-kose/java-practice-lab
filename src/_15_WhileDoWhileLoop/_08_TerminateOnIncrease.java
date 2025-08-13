@@ -21,26 +21,23 @@ public class _08_TerminateOnIncrease {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
 
-        int oncekiSayi = Integer.MAX_VALUE; // İlk karşılaştırma için büyük bir değer
-        boolean dahaBuyuk = false;
+        System.out.print("1. sayıyı giriniz: ");
+        int oncekiSayi = scanner.nextInt();
 
-        for (int i = 0; i < 10; i++) {
-            System.out.print((i + 1) + ". sayıyı giriniz: ");
+        for (int i = 2; i <= 10; i++) {
+            System.out.print(i + ". sayıyı giriniz: ");
             int mevcutSayi = scanner.nextInt();
 
             if (mevcutSayi > oncekiSayi) {
-                dahaBuyuk = true;
-                break;  // Döngüyü sonlandır
+                System.out.println("Döngü sonlandırıldı çünkü son girilen sayı önce girilenden büyük.");
+                scanner.close();
+                return; // Programı bitir
             }
-            oncekiSayi = mevcutSayi;  // Mevcut sayıyı bir sonraki karşılaştırma için sakla
+
+            oncekiSayi = mevcutSayi; // Karşılaştırma için güncelle
         }
 
-        if (dahaBuyuk) {
-            System.out.println("Döngü sonlandırıldı çünkü son girilen sayı önce girilenden büyük.");
-        } else {
-            System.out.println("Tüm sayılar başarıyla girildi.");
-        }
-
+        System.out.println("Tüm sayılar başarıyla girildi.");
         scanner.close();
     }
 }
