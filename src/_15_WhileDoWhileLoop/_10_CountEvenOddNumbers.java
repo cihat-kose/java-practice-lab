@@ -27,6 +27,12 @@ public class _10_CountEvenOddNumbers {
         System.out.print("Kaç adet sayı gireceksiniz? ");
         int adet = scanner.nextInt();
 
+        if (adet <= 0) {
+            System.out.println("Geçerli bir adet giriniz.");
+            scanner.close();
+            return;
+        }
+
         int ciftSayac = 0;
         int tekSayac = 0;
 
