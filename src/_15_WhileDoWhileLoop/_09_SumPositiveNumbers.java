@@ -21,16 +21,19 @@ public class _09_SumPositiveNumbers {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
         int toplam = 0;
-        int sayi;
 
-        do {
+        while (true) {
             System.out.print("Sayı giriniz (negatif bir sayı girerek çıkış yapabilirsiniz): ");
-            sayi = scanner.nextInt();
+            int sayi = scanner.nextInt();
+
+            if (sayi < 0) {
+                break; // Negatif girildiğinde döngüden çık
+            }
 
             if (sayi > 0) {
-                toplam += sayi;
+                toplam += sayi; // Sadece pozitifleri ekle
             }
-        } while (sayi >= 0);
+        }
 
         System.out.println("Girilen pozitif sayıların toplamı: " + toplam);
         scanner.close();
