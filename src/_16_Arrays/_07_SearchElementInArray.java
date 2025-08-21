@@ -1,16 +1,17 @@
 package _16_Arrays;
 
 import java.util.Scanner;
+import java.util.Arrays;
 
 /**
-   Görev:
-   Kullanıcının girdiği bir elemanın dizide olup olmadığını kontrol eden bir program yazınız.
+ Görev:
+ Kullanıcının girdiği bir elemanın dizide olup olmadığını kontrol eden bir program yazınız.
 
-   Örnek Çıktı:
-   Dizi elemanları: 10 20 30 40 50
-   Aranacak eleman: 30
-   Eleman dizide bulundu!
-*/
+ Örnek Çıktı:
+ Dizi elemanları: 10 20 30 40 50
+ Aranacak eleman: 30
+ Eleman dizide bulundu!
+ */
 
 public class _07_SearchElementInArray {
     public static void main(String[] args) {
@@ -18,12 +19,15 @@ public class _07_SearchElementInArray {
 
         int[] numbers = {10, 20, 30, 40, 50};
 
+        // Kullanıcıya dizi elemanlarını göster
+        System.out.println("Dizi elemanları: " + Arrays.toString(numbers));
+
         System.out.print("Aranacak elemanı giriniz: ");
         int searchElement = scanner.nextInt();
 
         boolean bulundu = false;
 
-        // Dizide elemanı arama
+        // Dizi içinde kullanıcıdan alınan elemanın varlığını kontrol et
         for (int num : numbers) {
             if (num == searchElement) {
                 bulundu = true;
