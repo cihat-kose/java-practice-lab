@@ -14,15 +14,15 @@ public class _06_FindDuplicateElements {
     public static void main(String[] args) {
         int[] numbers = {3, 5, 3, 2, 8, 5, 5, 5, 6, 3, 2};
 
-        Arrays.sort(numbers); // Diziyi küçükten büyüğe sıralıyoruz
+        // Aynı elemanların yan yana gelmesi için diziyi küçükten büyüğe sıralıyoruz
+        Arrays.sort(numbers);
 
         System.out.print("Tekrar eden elemanlar: ");
 
         for (int i = 0; i < numbers.length - 1; i++) {
-            if (numbers[i] == numbers[i + 1]) { // Yan yana aynı eleman varsa
-                if (i == 0 || numbers[i] != numbers[i - 1]) { // Daha önce yazdırılmadıysa
-                    System.out.print(numbers[i] + " ");
-                }
+            // Aynı eleman varsa ve bu eleman daha önce yazdırılmadıysa
+            if (numbers[i] == numbers[i + 1] && (i == 0 || numbers[i] != numbers[i - 1])) {
+                System.out.print(numbers[i] + " ");
             }
         }
         System.out.println();
