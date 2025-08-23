@@ -7,7 +7,6 @@ package _17_Arrays2D;
  * Örnek Çıktı:
  * 4 5 6
  */
-
 public class _02_PrintSecondRow {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -16,7 +15,7 @@ public class _02_PrintSecondRow {
                 {7, 8, 9}  // 3. satır
         };
 
-        // Matrisin 2. satırındaki tüm elemanları yazdırma işlemi
+        // Matrisin 2. satırındaki tüm elemanları yazdır
         for (int i = 0; i < matrix[1].length; i++) {
             System.out.print(matrix[1][i] + " ");
         }
