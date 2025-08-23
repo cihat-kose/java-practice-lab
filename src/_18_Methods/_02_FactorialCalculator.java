@@ -19,10 +19,16 @@ public class _02_FactorialCalculator {
      * @return n! (n faktöriyelinin sonucu)
      */
     public static int factorial(int n) {
+        if (n < 0) {
+            System.out.println("Negatif sayıların faktöriyeli hesaplanamaz: " + n);
+            return -1; // -1: Geçersiz giriş için uyarı değeri
+        }
+
         int result = 1;
         for (int i = 1; i <= n; i++) {
             result *= i;
         }
+
         return result;
     }
 
@@ -30,5 +36,6 @@ public class _02_FactorialCalculator {
         System.out.println("5! = " + factorial(5));
         System.out.println("7! = " + factorial(7));
         System.out.println("0! = " + factorial(0)); // 0! = 1 olmalı
+        System.out.println("-3! = " + factorial(-3)); // Uyarı mesajı gösterilmeli
     }
 }
