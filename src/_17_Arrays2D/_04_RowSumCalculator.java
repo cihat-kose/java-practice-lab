@@ -9,7 +9,6 @@ package _17_Arrays2D;
  * Satır 2 toplamı= 18
  * Satır 3 toplamı= 24
  */
-
 public class _04_RowSumCalculator {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -19,7 +18,7 @@ public class _04_RowSumCalculator {
         };
 
         for (int i = 0; i < matrix.length; i++) {
-            int rowSum = 0; // Her satır için toplamı sıfırla
+            int rowSum = 0; // Her satır için toplam sıfırlanır
             for (int j = 0; j < matrix[i].length; j++) {
                 rowSum += matrix[i][j];
             }
