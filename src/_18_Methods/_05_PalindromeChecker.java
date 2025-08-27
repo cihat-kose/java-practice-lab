@@ -9,17 +9,17 @@ package _18_Methods;
  * - Örnek palindrom kelimeler: "radar", "level", "kayak", "madam".
  * - Boşluklar ve büyük/küçük harf duyarlılığı olmadan kontrol edilmelidir.
  */
-
 public class _05_PalindromeChecker {
 
     /**
-     * Verilen stringin palindrom olup olmadığını kontrol eden metot.
+     * Verilen stringin palindrom olup olmadığını kontrol eder.
      *
      * @param str Kontrol edilecek string
-     * @return Eğer string palindrom ise `true`, değilse `false`
+     * @return Eğer string palindrom ise true, değilse false
      */
     public static boolean isPalindrome(String str) {
-        str = str.toLowerCase();
+        // Boşlukları kaldır ve küçük harfe çevir
+        str = str.replace(" ", "").toLowerCase();
 
         String reversed = "";
         for (int i = str.length() - 1; i >= 0; i--) {
@@ -30,9 +30,10 @@ public class _05_PalindromeChecker {
     }
 
     public static void main(String[] args) {
-        String word = "Radar";
-        boolean result = isPalindrome(word);
+        String[] testWords = {"Radar", "Level", "Kayak", "Java"};
 
-        System.out.println(word + " palindrom mu? " + result);
+        for (String word : testWords) {
+            System.out.println(word + " palindrom mu? " + isPalindrome(word));
+        }
     }
 }
