@@ -1,5 +1,7 @@
 package _18_Methods;
 
+import java.util.Scanner;
+
 /**
  * Görev:
  * Kullanıcıdan alınan iki sayı ile dört temel matematiksel işlemi gerçekleştiren
@@ -25,8 +27,6 @@ package _18_Methods;
  * Sonuç: 15.00
  */
 
-import java.util.Scanner;
-
 public class _06_Calculator {
 
     // Tek bir Scanner nesnesi tanımlıyoruz.
@@ -36,8 +36,9 @@ public class _06_Calculator {
         while (true) {
             menuyuGoster();
             int secim = tamSayiAl();
+
             if (secim < 1 || secim > 4) {
-                System.out.println("Hesap makinesi kapatılıyor..");
+                System.out.println("Hesap makinesi kapatılıyor...");
                 break;
             }
 
@@ -45,50 +46,33 @@ public class _06_Calculator {
             double ikinciSayi = ondalikSayiAl("İkinci sayıyı giriniz: ");
 
             double sonuc = hesaplamaYap(secim, birinciSayi, ikinciSayi);
-            System.out.printf("Sonuç: %.2f\n", sonuc);
+            System.out.printf("Sonuç: %.2f%n", sonuc);
         }
     }
 
-    /**
-     * Kullanıcıya menüyü gösteren metot.
-     */
+    // Kullanıcıya menüyü gösterir
     private static void menuyuGoster() {
         System.out.println("\nHesap Makinesi");
-        System.out.println("1. Toplama(+) için 1");
-        System.out.println("2. Çıkarma(-) için 2");
-        System.out.println("3. Çarpma (x) için 3");
-        System.out.println("4. Bölme  (/) için 4");
-        System.out.print("5. Çıkış için 1-2-3-4 dışındaki bir rakamı girin: ");
+        System.out.println("1. Toplama (+)");
+        System.out.println("2. Çıkarma (-)");
+        System.out.println("3. Çarpma (x)");
+        System.out.println("4. Bölme  (/)");
+        System.out.println("Çıkış için 1-4 dışındaki bir rakamı girin.");
+        System.out.print("Seçiminiz: ");
     }
 
-    /**
-     * Kullanıcıdan tam sayı almak için metot.
-     *
-     * @return Kullanıcının girdiği tam sayı.
-     */
+    // Kullanıcıdan tam sayı almak için metot
     private static int tamSayiAl() {
         return giris.nextInt();
     }
 
-    /**
-     * Kullanıcıdan ondalıklı sayı almak için metot.
-     *
-     * @param mesaj Kullanıcıya gösterilecek mesaj.
-     * @return Kullanıcının girdiği ondalıklı sayı.
-     */
+    // Kullanıcıdan ondalıklı sayı almak için metot
     private static double ondalikSayiAl(String mesaj) {
         System.out.print(mesaj);
         return giris.nextDouble();
     }
 
-    /**
-     * Kullanıcının seçimine göre ilgili matematiksel işlemi yapan metot.
-     *
-     * @param secim Kullanıcının seçtiği işlem (1: Toplama, 2: Çıkarma, 3: Çarpma, 4: Bölme).
-     * @param sayi1 Birinci sayı.
-     * @param sayi2 İkinci sayı.
-     * @return İşlem sonucu.
-     */
+    // Kullanıcının seçimine göre işlemi yapan metot
     private static double hesaplamaYap(int secim, double sayi1, double sayi2) {
         switch (secim) {
             case 1: return toplam(sayi1, sayi2);
@@ -99,50 +83,23 @@ public class _06_Calculator {
         }
     }
 
-    /**
-     * Toplama işlemi yapan metot.
-     *
-     * @param sayi1 Birinci sayı.
-     * @param sayi2 İkinci sayı.
-     * @return Toplam sonucu.
-     */
     private static double toplam(double sayi1, double sayi2) {
         return sayi1 + sayi2;
     }
 
-    /**
-     * Çıkarma işlemi yapan metot.
-     *
-     * @param sayi1 Birinci sayı.
-     * @param sayi2 İkinci sayı.
-     * @return Çıkarma sonucu.
-     */
     private static double cikarma(double sayi1, double sayi2) {
         return sayi1 - sayi2;
     }
 
-    /**
-     * Çarpma işlemi yapan metot.
-     *
-     * @param sayi1 Birinci sayı.
-     * @param sayi2 İkinci sayı.
-     * @return Çarpma sonucu.
-     */
     private static double carpma(double sayi1, double sayi2) {
         return sayi1 * sayi2;
     }
 
-    /**
-     * Bölme işlemi yapan metot. Sıfıra bölme kontrolü içerir.
-     *
-     * @param sayi1 Birinci sayı.
-     * @param sayi2 İkinci sayı.
-     * @return Bölme sonucu veya hata mesajı.
-     */
+    // Bölme işlemi yapan metot (sıfıra bölme kontrolü içerir)
     private static double bolme(double sayi1, double sayi2) {
         if (sayi2 == 0) {
-            System.out.println("Hata: Bölme işlemi için ikinci sayı sıfır olamaz.");
-            return Double.POSITIVE_INFINITY;
+            System.out.println("Hata: Sıfıra bölme yapılamaz. Sonuç 0 döndürüldü.");
+            return 0;
         }
         return sayi1 / sayi2;
     }
