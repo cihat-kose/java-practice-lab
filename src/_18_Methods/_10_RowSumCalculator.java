@@ -37,5 +37,3 @@ public class _10_RowSumCalculator {
         }
     }
 }
-
-// refactor: improved row sum calculation and updated comments
