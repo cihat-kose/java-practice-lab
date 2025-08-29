@@ -9,7 +9,6 @@ package _18_Methods;
  * 4 5 6
  * 7 8 9
  */
-
 public class _07_Print2DArray {
     public static void main(String[] args) {
         int[][] matrix = {
@@ -31,7 +30,7 @@ public class _07_Print2DArray {
             for (int j = 0; j < matrix[i].length; j++) {
                 System.out.print(matrix[i][j] + " ");
             }
-            System.out.println(); // Satır sonu
+            System.out.println(); // satır sonu
         }
     }
 }
