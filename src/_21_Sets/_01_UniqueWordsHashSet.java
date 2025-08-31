@@ -11,7 +11,6 @@ Görev:
 - HashSet’in tüm elemanlarını ekrana yazdırın.
 - "Java" kelimesinin HashSet içinde olup olmadığını kontrol edin ve sonucu ekrana yazdırın.
 */
-
 public class _01_UniqueWordsHashSet {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -22,20 +21,24 @@ public class _01_UniqueWordsHashSet {
             System.out.print("Lütfen bir kelime giriniz: ");
             String word = scanner.nextLine().trim();
 
-            // Boş giriş kabul edilmez
             if (!word.isEmpty()) {
                 words.add(word);
             } else {
                 System.out.println("Boş giriş yapılamaz! Lütfen geçerli bir kelime girin.");
-                i--; // Boş giriş durumunda tekrar et.
+                i--; // Tekrar denemesi için i azaltılır
             }
         }
 
         // HashSet bilgilerini ekrana yazdır
         System.out.println("\nHashSet Boyutu: " + words.size());
         System.out.println("HashSet Elemanları: " + words);
-        System.out.println("HashSet 'Java' kelimesini içeriyor mu? " + words.contains("Java"));
 
-        scanner.close();
+        if (words.contains("Java")) {
+            System.out.println("HashSet 'Java' kelimesini içeriyor ✅");
+        } else {
+            System.out.println("HashSet 'Java' kelimesini içermiyor ❌");
+        }
+
+        // scanner.close();  // İleri derslerde tekrar kullanılabilirlik için kapatma kaldırılabilir
     }
 }
