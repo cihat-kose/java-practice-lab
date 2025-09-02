@@ -21,24 +21,25 @@ public class _01_UniqueWordsHashSet {
             System.out.print("Lütfen bir kelime giriniz: ");
             String word = scanner.nextLine().trim();
 
-            if (!word.isEmpty()) {
-                words.add(word);
-            } else {
+            if (word.isEmpty()) {
                 System.out.println("Boş giriş yapılamaz! Lütfen geçerli bir kelime girin.");
                 i--; // Tekrar denemesi için i azaltılır
+            } else if (!words.add(word)) {
+                // add() false dönerse kelime zaten vardır
+                System.out.println("Bu kelime zaten eklenmişti, tekrar eklenmedi.");
             }
         }
 
         // HashSet bilgilerini ekrana yazdır
-        System.out.println("\nHashSet Boyutu: " + words.size());
-        System.out.println("HashSet Elemanları: " + words);
+        System.out.println("\nToplam farklı kelime sayısı: " + words.size());
+        System.out.println("HashSet içeriği: " + words);
 
         if (words.contains("Java")) {
-            System.out.println("HashSet 'Java' kelimesini içeriyor ✅");
+            System.out.println("'Java' kelimesi listede mevcut ✅");
         } else {
-            System.out.println("HashSet 'Java' kelimesini içermiyor ❌");
+            System.out.println("'Java' kelimesi listede yok ❌");
         }
 
-        // scanner.close();  // İleri derslerde tekrar kullanılabilirlik için kapatma kaldırılabilir
+        scanner.close();
     }
 }
