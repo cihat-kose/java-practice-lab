@@ -7,84 +7,56 @@ import java.util.TreeMap;
 
 public class _00_Intro {
     public static void main(String[] args) {
-        // Java Map Nedir?
-        // Java'da Map, anahtar-değer çiftlerini saklamak için kullanılan bir veri yapısıdır.
-        // Bir anahtar (Key) yalnızca bir kez kullanılabilir ve benzersizdir.
-        // Her anahtar, bir değer (Value) ile eşleştirilir.
-        // Aynı anahtar tekrar kullanılamaz, ancak farklı anahtarlar aynı değere sahip olabilir.
-        // Map, veriye hızlı erişim sağlamak için kullanılır.
+        // Java'da Map Nedir?
+        // Map, anahtar-değer çiftlerini saklar.
+        // - Key (anahtar) benzersizdir.
+        // - Value (değer) tekrar edebilir.
+        // - Aynı key tekrar kullanılamaz, son değer geçerli olur.
 
-        // Map Türleri ve Kullanım Alanları
-        // 1. HashMap -> Hızlı erişim sağlar, ancak elemanları belirli bir sırayla saklamaz.
-        // 2. TreeMap -> Anahtarları doğal sıralamada saklar, alfabetik veya sayısal sıralama kullanır.
-        // 3. LinkedHashMap -> HashMap gibi çalışır ancak ekleme sırasını korur.
+        // Map Türleri:
+        // 1. HashMap -> Hızlıdır, sırasızdır.
+        // 2. TreeMap -> Key'leri sıralar.
+        // 3. LinkedHashMap -> Ekleme sırasını korur.
 
-        // HashMap - Hızlı erişim, sırasız depolama
+        // HashMap - hızlı erişim, sırasız depolama
         Map<String, String> hashMap = new HashMap<>();
         hashMap.put("isim", "Ahmet");
         hashMap.put("soyisim", "Yılmaz");
         hashMap.put("şehir", "İstanbul");
-        hashMap.put("ülke", "Türkiye"); // Aynı değer farklı anahtarlarda kullanılabilir.
+        hashMap.put("ülke", "Türkiye");
 
-        // TreeMap - Anahtarları doğal sıralama ile saklar
+        // TreeMap - Key'leri sıralı şekilde tutar
         Map<String, String> treeMap = new TreeMap<>();
         treeMap.put("ülke", "Türkiye");
         treeMap.put("başkent", "Ankara");
         treeMap.put("para birimi", "TL");
 
-        // LinkedHashMap - Ekleme sırasına göre elemanları saklar
+        // LinkedHashMap - ekleme sırasına göre tutar
         Map<String, Integer> linkedHashMap = new LinkedHashMap<>();
         linkedHashMap.put("Ocak", 31);
         linkedHashMap.put("Şubat", 28);
-        linkedHashMap.put("Mart", 31); // Aynı değer tekrar kullanılabilir.
+        linkedHashMap.put("Mart", 31);
 
-        // Java Map'leri Nasıl Kullanılır?
-
-        // 1. Değer ekleme -> put() metodu ile anahtar-değer eklenir.
-        hashMap.put("yaş", "30");
-
-        // 2. Değer erişimi -> get() metodu ile anahtarın karşılık gelen değeri alınır.
-        String isim = hashMap.get("isim");
-
-        // 3. Değer güncelleme -> Mevcut bir anahtar varsa, put() metodu ile değeri güncellenir.
-        hashMap.put("şehir", "Ankara");
-
-        // 4. Değer silme -> remove() metodu ile belirtilen anahtar kaldırılır.
-        hashMap.remove("soyisim");
-
-        // 5. Map boyutu -> size() metodu Map'teki eleman sayısını döndürür.
-        int boyut = hashMap.size();
-
-        // 6. Anahtar kontrolü -> containsKey() metodu, belirli bir anahtarın olup olmadığını kontrol eder.
+        // HashMap üzerinde işlemler
+        hashMap.put("yaş", "30"); // ekleme
+        String isim = hashMap.get("isim"); // değer okuma
+        hashMap.put("şehir", "Ankara"); // güncelleme
+        hashMap.remove("soyisim"); // silme
+        int boyut = hashMap.size(); // boyut
         boolean varMi = hashMap.containsKey("başkent");
-
-        // 7. Değer kontrolü -> containsValue() metodu, belirli bir değerin Map'te olup olmadığını kontrol eder.
         boolean degerVarMi = hashMap.containsValue("Türkiye");
 
-        // 8. Döngülerle Map Elemanlarını Geçmek
-        // Tüm anahtar-değer çiftlerini yazdırmak için entrySet() kullanılır.
+        // entrySet ile key + value yazdırma
         System.out.println("\nHashMap İçeriği:");
         for (Map.Entry<String, String> entry : hashMap.entrySet()) {
             System.out.println("Anahtar: " + entry.getKey() + " - Değer: " + entry.getValue());
         }
 
-        // 9. Varsayılan Değer Kullanımı (getOrDefault())
-        // Eğer belirtilen anahtar yoksa, varsayılan bir değer döndürülür.
+        // Varsayılan değer (getOrDefault)
         String meslek = hashMap.getOrDefault("meslek", "Bilinmiyor");
         System.out.println("Meslek: " + meslek);
 
-        // 10. Silme ve Temizleme (clear() vs remove())
-        // remove() belirli bir anahtarı kaldırırken, clear() tüm elemanları siler.
-        hashMap.remove("yaş");
-        System.out.println("Yaş bilgisi silindi: " + hashMap);
-        hashMap.clear();
-        System.out.println("Tüm veriler temizlendi: " + hashMap);
-
-        // 11. Sıralama ve Performans Karşılaştırması
-        // TreeMap sıralı olduğu için alfabetik veya sayısal olarak sıralı şekilde döner.
-        System.out.println("TreeMap İçeriği (Sıralı): " + treeMap);
-
-        // 12. Map Üzerinde Döngü ile Anahtarları veya Değerleri Alma
+        // Anahtarlar ve değerler ayrı yazdırma
         System.out.println("\nHashMap Anahtarları:");
         for (String key : hashMap.keySet()) {
             System.out.println("Anahtar: " + key);
@@ -95,8 +67,12 @@ public class _00_Intro {
             System.out.println("Değer: " + value);
         }
 
+        // clear() sonrası HashMap boş olur
+        hashMap.clear();
+
         // Sonuçları yazdırma
-        System.out.println("LinkedHashMap: " + linkedHashMap);
+        System.out.println("\nTreeMap İçeriği (sıralı): " + treeMap);
+        System.out.println("LinkedHashMap İçeriği (ekleme sırasına göre): " + linkedHashMap);
         System.out.println("Map Boyutu: " + boyut);
         System.out.println("Başkent Var mı? " + varMi);
         System.out.println("'Türkiye' Değer Olarak Var mı? " + degerVarMi);
