@@ -1,39 +1,57 @@
 
 Summary
 
-Java `Set` sınıfları, benzersiz elemanları içeren bir koleksiyon türüdür.
-`Set`ler, elemanların sırasını korumaz ve her eleman yalnızca bir kez bulunabilir.
-Bu özellikleri nedeniyle `Set`ler, birçok farklı senaryoda kullanışlıdır.
+Java Set sınıfları, benzersiz (tekrarsız) elemanları içeren bir koleksiyon türüdür.
+Set’ler, aynı elemanı birden fazla kez saklamaz ve genellikle elemanların sırası önemli değildir.
+Bu özellikleri nedeniyle Set’ler, birçok farklı senaryoda kullanışlıdır.
 
-Java'da `Set`ler, `HashSet`, `TreeSet` ve `LinkedHashSet` olmak üzere üç ana sınıfta bulunur.
+Java’da Set arayüzünün en çok kullanılan 3 temel uygulaması vardır: HashSet, TreeSet ve LinkedHashSet.
 
- Bu sınıflar arasındaki farklar şu şekildedir:
+1. HashSet
+- Elemanları herhangi bir sırayla depolar (sıra garantisi yoktur).
+- En hızlı ekleme/silme/arama işlemlerine sahiptir.
+- null değerine izin verir.
+- Performans: Ortalama O(1) ekleme, silme ve arama.
+- Ne zaman kullanılır? → Sıra önemli değil, hız önemliyse.
 
-1. HashSet:
-    - Elemanları herhangi bir sırayla depolar ve en hızlı ekleme/silme işlemlerine sahiptir.
-    - Elemanların sırası önemli değilse tercih edilir.
-    - Hash tabanlı bir yapı kullandığı için `null` değerine izin verir.
-    - Performans: Ortalama O(1) ekleme, silme ve arama işlemleri.
+2. TreeSet
+- Elemanları doğal sıralama ya da verilen bir Comparator ile saklar.
+- NavigableSet ve SortedSet arayüzlerini uygular.
+- null değerine izin vermez.
+- Performans: Ortalama O(log n) ekleme, silme ve arama.
+- Ne zaman kullanılır? → Elemanların sıralı olması gerekiyorsa.
 
-2. TreeSet:
-    - Elemanları doğal bir sıraya göre veya sağlanan bir `Comparator` ile sıralı olarak depolar.
-    - Elemanların sıralı olması gerektiği durumlarda kullanılır.
-    - `NavigableSet` ve `SortedSet` arayüzlerini uygular.
-    - Performans: Ortalama O(log n) ekleme, silme ve arama işlemleri.
-    - `null` değerine izin vermez.
+3. LinkedHashSet
+- Elemanları eklendikleri sıraya göre depolar.
+- HashSet’e göre biraz yavaştır ama TreeSet’ten hızlıdır.
+- Performans: Ortalama O(1) ekleme, silme ve arama.
+- Ne zaman kullanılır? → Ekleme sırası korunmalı ama sıralama şart değilse.
 
-3. LinkedHashSet:
-    - Elemanları eklendiği sıraya göre depolar.
-    - Elemanların sırasının korunması gerektiği durumlarda kullanılır.
-    - `HashSet`e göre ekleme/silme işlemleri biraz daha yavaştır, ancak `TreeSet`e göre daha hızlıdır.
-    - Performans: Ortalama O(1) ekleme, silme ve arama işlemleri.
+Sık Kullanılan Metotlar
+- add(element) → Eleman ekler.
+- remove(element) → Eleman siler.
+- contains(element) → Eleman set içinde mi kontrol eder.
+- size() → Eleman sayısını döndürür.
+- isEmpty() → Set boş mu kontrol eder.
 
-`Set`ler, `add()` metoduyla eleman eklenerek doldurulur.
-Elemanlar, `remove()` metoduyla silinebilir.
-Ayrıca, `contains()` metoduyla bir elemanın `Set` içinde olup olmadığı kontrol edilebilir.
+Set İşlemleri
+Set’ler matematiksel küme işlemlerini destekler:
+- Birleştirme (Union): addAll()
+- Kesişim (Intersection): retainAll()
+- Fark (Difference): removeAll()
 
-`Set`ler, diğer `Set`lerle birleştirilebilir, kesiştirilebilir veya farkları alınabilir.
-Bir `Set`in başka bir `Set` ile birleştirilmesi `addAll()` metodu kullanılarak yapılır.
-Kesişim işlemi `retainAll()` metodu ile yapılırken, fark işlemi `removeAll()` metodu ile yapılır.
+Örnek
+Set<Integer> set1 = new HashSet<>();
+set1.add(1);
+set1.add(2);
+set1.add(3);
 
-`Set`ler genellikle `for-each` döngüsüyle veya `iterator()` metodu kullanılarak elemanları üzerinde gezinilir.
+Set<Integer> set2 = new HashSet<>();
+set2.add(2);
+set2.add(3);
+set2.add(4);
+
+// Kesişim
+set1.retainAll(set2);
+System.out.println(set1); // [2, 3]
+
