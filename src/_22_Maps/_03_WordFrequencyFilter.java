@@ -1,20 +1,15 @@
 package _22_Maps;
 
-import java.util.*;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Scanner;
+import java.util.Set;
 
 /**
-Görev:
-Kullanıcının girdiği kelimeleri analiz eden bir Java programı yazın.
-Program, tekrar eden kelimeleri ayıklamalı ve her kelimenin kaç kez tekrarlandığını hesaplamalıdır.
-
-İçerik:
-1. Kullanıcıdan kaç kelime gireceği bilgisi alınır.
-2. Kullanıcıdan belirtilen sayıda kelime alınır.
-3. Kelime tekrar sayıları hesaplanarak bir HashMap içinde saklanır.
-4. Tekrar eden kelimeler ayıklanarak bir Set içinde saklanır.
-5. Benzersiz kelimeler ve tekrar sayıları ekrana yazdırılır.
-*/
-
+ Görev:
+ Kullanıcının girdiği kelimeleri analiz eden bir Java programı yazın.
+ Program, tekrar eden kelimeleri ayıklamalı ve her kelimenin kaç kez tekrarlandığını hesaplamalıdır.
+ */
 public class _03_WordFrequencyFilter {
     public static void main(String[] args) {
         Scanner scanner = new Scanner(System.in);
@@ -23,7 +18,7 @@ public class _03_WordFrequencyFilter {
         int kelimeSayisi = scanner.nextInt();
         scanner.nextLine(); // Satır sonu karakterini temizle
 
-        // Kullanıcıdan kelimeleri al ve işle
+        // Kullanıcıdan kelimeleri al
         String[] kelimeler = kullanicidanKelimeleriAl(scanner, kelimeSayisi);
 
         // Kelime frekanslarını hesapla
@@ -36,7 +31,7 @@ public class _03_WordFrequencyFilter {
         System.out.println("\nBenzersiz Kelimeler: " + benzersizKelimeler);
         System.out.println("\nKelime Tekrar Sayıları:");
         for (Map.Entry<String, Integer> entry : kelimeFrekanslari.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
+            System.out.println(entry.getKey() + " → " + entry.getValue() + " kez");
         }
 
         scanner.close();
@@ -48,7 +43,13 @@ public class _03_WordFrequencyFilter {
         System.out.println("Lütfen kelimeleri giriniz:");
         for (int i = 0; i < kelimeSayisi; i++) {
             System.out.print((i + 1) + ". kelime: ");
-            kelimeler[i] = scanner.nextLine().trim();
+            String giris = scanner.nextLine().trim().toLowerCase();
+            if (giris.isEmpty()) {
+                System.out.println("Boş kelime girilemez, tekrar deneyin.");
+                i--; // tekrar ettir
+            } else {
+                kelimeler[i] = giris;
+            }
         }
         return kelimeler;
     }
