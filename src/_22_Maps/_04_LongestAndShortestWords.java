@@ -3,96 +3,106 @@ package _22_Maps;
 import java.util.*;
 
 /**
-Görev:
-Kullanıcının girdiği kelimeler arasından en uzun ve en kısa kelimeleri bulan ve tekrar sayılarını hesaplayan bir Java programı yazın.
+ Görev:
+ Kullanıcının girdiği kelimeler arasından en uzun ve en kısa kelimeleri bulur,
+ ayrıca kelimelerin tekrar sayılarını hesaplayıp yazdırır.
 
-İçerik:
-1. Kullanıcıdan kaç kelime gireceği bilgisi alınır.
-2. Kullanıcıdan belirtilen sayıda kelime alınır.
-3. Her kelimenin kaç kez tekrarlandığı hesaplanarak bir HashMap içinde saklanır.
-4. En uzun ve en kısa kelimeler belirlenir.
-5. En uzun ve en kısa kelimeler ile kelime tekrar sayıları ekrana yazdırılır.
-*/
-
+ Notlar (Eğitsel):
+ - Sayımda tutarlılık için kelimeler küçük harfe çevrilir.
+ - Boş giriş kabul edilmez; kullanıcı yeniden girmeye yönlendirilir.
+ - Alfabetik yazdırma için TreeMap kullanılır (kolay ve anlaşılır).
+ */
 public class _04_LongestAndShortestWords {
+
     public static void main(String[] args) {
-        Scanner scanner = new Scanner(System.in);
+        Scanner scanner = new Scanner(System.in); // Eğitim amaçlı: System.in kapatılmıyor.
 
         System.out.print("Kaç kelime gireceksiniz: ");
-        int kelimeSayisi = scanner.nextInt();
+        int kelimeSayisi = readPositiveInt(scanner);
 
-        // `nextInt()` metodu yalnızca sayıyı okur ve Enter tuşuna basıldığında oluşan newline karakterini (`\n`) bırakır.
-        // Bu nedenle, bir sonraki `nextLine()` çağrısı boş bir değer döner.
-        // Bunu önlemek için, newline karakterini okumak ve atlamak için `scanner.nextLine()` çağrısı yapılır.
-        scanner.nextLine(); // Satır sonu karakterini temizleyin
+        // 1) Kelimeleri al
+        String[] kelimeler = readWords(scanner, kelimeSayisi);
 
-        // Kullanıcıdan kelimeleri al ve işle
-        String[] kelimeler = kullanicidanKelimeleriAl(scanner, kelimeSayisi);
+        // 2) Frekansları hesapla (küçük/büyük harf duyarsız)
+        Map<String, Integer> kelimeFrekanslari = countFrequencies(kelimeler);
 
-        // Kelime frekanslarını hesapla
-        Map<String, Integer> kelimeFrekanslari = kelimeFrekansHesapla(kelimeler);
-
-        // En uzun ve en kısa kelimeleri bul
-        Set<String> enUzunKelimeler = new HashSet<>();
-        Set<String> enKisaKelimeler = new HashSet<>();
-        int[] uzunluklar = enUzunVeEnKisaKelimeleriBul(kelimeler, enUzunKelimeler, enKisaKelimeler);
-
-        // Sonuçları yazdır
-        System.out.println("\nEn Uzun Kelimeler (" + uzunluklar[0] + " harf): " + enUzunKelimeler);
-        System.out.println("En Kısa Kelimeler (" + uzunluklar[1] + " harf): " + enKisaKelimeler);
-
-        System.out.println("\nKelime Tekrar Sayıları:");
-        for (Map.Entry<String, Integer> entry : kelimeFrekanslari.entrySet()) {
-            System.out.println(entry.getKey() + ": " + entry.getValue());
-        }
-
-        scanner.close();
-    }
-
-    // Kullanıcıdan kelimeleri alıp bir dizi olarak döndüren metod
-    public static String[] kullanicidanKelimeleriAl(Scanner scanner, int kelimeSayisi) {
-        String[] kelimeler = new String[kelimeSayisi];
-        System.out.println("Lütfen kelimeleri giriniz:");
-        for (int i = 0; i < kelimeSayisi; i++) {
-            System.out.print((i + 1) + ". kelime: ");
-            kelimeler[i] = scanner.nextLine().trim();
-        }
-        return kelimeler;
-    }
-
-    // Kelime tekrar sayılarını hesaplayan metod
-    public static Map<String, Integer> kelimeFrekansHesapla(String[] kelimeler) {
-        Map<String, Integer> kelimeSayaci = new HashMap<>();
-        for (String kelime : kelimeler) {
-            kelimeSayaci.put(kelime, kelimeSayaci.getOrDefault(kelime, 0) + 1);
-        }
-        return kelimeSayaci;
-    }
-
-    // En uzun ve en kısa kelimeleri bulan metod
-    public static int[] enUzunVeEnKisaKelimeleriBul(String[] kelimeler, Set<String> enUzun, Set<String> enKisa) {
-        int maxUzunluk = kelimeler[0].length();
-        int minUzunluk = kelimeler[0].length();
+        // 3) En uzun ve en kısa kelimeleri bul
+        Set<String> enUzun = new HashSet<>();
+        Set<String> enKisa = new HashSet<>();
+        int max = kelimeler[0].length();
+        int min = kelimeler[0].length();
 
         for (String kelime : kelimeler) {
             int uzunluk = kelime.length();
 
-            if (uzunluk > maxUzunluk) {
-                maxUzunluk = uzunluk;
+            if (uzunluk > max) {
+                max = uzunluk;
                 enUzun.clear();
                 enUzun.add(kelime);
-            } else if (uzunluk == maxUzunluk) {
+            } else if (uzunluk == max) {
                 enUzun.add(kelime);
             }
 
-            if (uzunluk < minUzunluk) {
-                minUzunluk = uzunluk;
+            if (uzunluk < min) {
+                min = uzunluk;
                 enKisa.clear();
                 enKisa.add(kelime);
-            } else if (uzunluk == minUzunluk) {
+            } else if (uzunluk == min) {
                 enKisa.add(kelime);
             }
         }
-        return new int[]{maxUzunluk, minUzunluk};
+
+        // 4) Sonuçları yazdır
+        System.out.println("\nEn Uzun Kelimeler (" + max + " harf): " + enUzun);
+        System.out.println("En Kısa Kelimeler (" + min + " harf): " + enKisa);
+
+        System.out.println("\nKelime Tekrar Sayıları (alfabetik):");
+        // TreeMap: alfabetik sıralama için yeterli ve anlaşılır
+        Map<String, Integer> sirali = new TreeMap<>(kelimeFrekanslari);
+        for (Map.Entry<String, Integer> e : sirali.entrySet()) {
+            System.out.println(e.getKey() + ": " + e.getValue());
+        }
+    }
+
+    // Pozitif tam sayı okur; hatalı girişte tekrar ister
+    private static int readPositiveInt(Scanner scanner) {
+        while (true) {
+            if (scanner.hasNextInt()) {
+                int deger = scanner.nextInt();
+                scanner.nextLine(); // satır sonunu temizle
+                if (deger > 0) return deger;
+            } else {
+                scanner.nextLine(); // hatalı girişi temizle
+            }
+            System.out.print("Lütfen pozitif bir tam sayı girin: ");
+        }
+    }
+
+    // Kullanıcıdan kelimeleri alır (boş girişe izin verilmez)
+    private static String[] readWords(Scanner scanner, int adet) {
+        String[] kelimeler = new String[adet];
+        System.out.println("Lütfen kelimeleri giriniz:");
+        for (int i = 0; i < adet; i++) {
+            while (true) {
+                System.out.print((i + 1) + ". kelime: ");
+                String giris = scanner.nextLine().trim();
+                if (!giris.isEmpty()) {
+                    kelimeler[i] = giris;
+                    break;
+                }
+                System.out.println("Boş giriş geçersizdir. Lütfen tekrar deneyin.");
+            }
+        }
+        return kelimeler;
+    }
+
+    // Kelime tekrar sayılarını hesaplar (küçük/büyük harf duyarsız)
+    private static Map<String, Integer> countFrequencies(String[] kelimeler) {
+        Map<String, Integer> sayac = new HashMap<>();
+        for (String kelime : kelimeler) {
+            String normal = kelime.toLowerCase(Locale.ROOT);
+            sayac.put(normal, sayac.getOrDefault(normal, 0) + 1);
+        }
+        return sayac;
     }
 }
