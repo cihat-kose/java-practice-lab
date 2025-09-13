@@ -13,4 +13,4 @@ Görev Açıklaması:
 
 İpucu:
 - Üst sınıfta genel bir `calculateArea()` metodu tanımlayın. Alt sınıflarda bu metodu özelleştirerek şekle özel alan hesaplamalarını yapabilirsiniz.
-- `Circle` sınıfında alanı `π * r^2` formülüyle, `Rectangle` sınıfında ise `length * width` formülüyle hesaplayabilirsiniz.
+- `Circle` sınıfında alanı `π * r * r` formülüyle, `Rectangle` sınıfında ise `length * width` formülüyle hesaplayabilirsiniz.

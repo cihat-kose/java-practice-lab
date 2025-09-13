@@ -11,5 +11,5 @@ Gereksinimler:
 
 İpuçları:
 - Polymorphism kullanarak üst sınıf referansı ile alt sınıf nesnelerini yönetin.
-- Circle sınıfında alanı hesaplamak için π * r^2 formülü kullanılmalıdır.
+- Circle sınıfında alanı hesaplamak için π * r * r formülü kullanılmalıdır.
 - Rectangle sınıfında alanı hesaplamak için uzunluk * genişlik formülü kullanılmalıdır.
